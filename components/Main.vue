@@ -13,16 +13,16 @@
             <SectionExperience />
         </div>
         <div id="competences" class="max-w-5xl min-h-screen flex items-center">
-            <SectionCompetences />
+            <SectionSkill />
         </div>
         <div id="extra" class="max-w-5xl min-h-screen flex items-center">
-            <SectionAbout />
+            <SectionExtra />
         </div>
         <div id="projects" class="max-w-5xl min-h-screen flex items-center">
-            <SectionAbout />
+            <SectionProject />
         </div>
         <div id="contact" class="max-w-5xl min-h-screen flex items-center">
-            <SectionAbout />
+            <SectionContact />
         </div>
     </div>
 </template>
