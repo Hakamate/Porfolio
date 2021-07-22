@@ -1,24 +1,34 @@
 <template>
     <div>
-        <h2 class="text-4xl text-center font-bold leading-relaxed"><span class="text-primary">A PROPOS DE</span> MOI</h2>
+        <h2 class="text-4xl text-center font-bold leading-relaxed">ME <span class="text-primary">CONTACTER</span></h2>
         <hr class="border-gray-700 mt-4">
-        <div class="mt-10 grid grid-cols-2">
+        <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-10">
             <div>
-                <ul>
-                    <li v-for="(info, indexc) in contactInfo" :key="indexc" class="mb-5 last:mb-0 flex items-center">
-                        <DynamicSvg :icon="info.icon" class="text-primary mr-3"/>
-                        <a :href="info.url" target="_blank">{{ info.value }}</a>
-                    </li>
-                </ul>
+                    <ul>
+                        <li v-for="(info, indexc) in contactInfo" :key="indexc" class="mb-5 last:mb-0 flex items-center">
+                            <DynamicSvg :icon="info.icon" :width="25" :height="25" class="text-primary mr-3"/>
+                            <a :href="info.url" target="_blank" class="text-xl">{{ info.value }}</a>
+                        </li>
+                    </ul>
             </div>
-            <div>
-                <ul class="grid grid-cols-2 gap-8">
-                    <li v-for ="(stat, indexS) in aboutStat" :key="indexS" class="p-4 bg-gray-800 flex flex-col items-center justify-center">
-                        <span class="text-5xl text-primary mb-2">{{ stat.value }}</span>
-                        <p class="font-semibold text-2xl text-center">{{ stat.title }}</p>
-                    </li>
-                </ul>
-            </div>
+            <form action="#" methid="post" netlify class="w-full">
+                    <div class="flex flex-col">
+                        <label class="w-0 h-0 text-gray-900" for="fname">Nom complet</label>
+                        <input id="fname" class="rounded-2xl px-3 py-2 bg-gray-700" placeholder="Ex: John Doe" type="text">
+                    </div>
+
+                    <div class="flex flex-col my-4">
+                        <label class="w-0 h-0 text-gray-900" for="email">Email</label>
+                        <input id="email" class="rounded-2xl px-3 py-2 bg-gray-700" placeholder="Ex: nom.prenom@gail.com" type="email">
+                    </div>
+
+                    <div class="flex flex-col">
+                        <label class="w-0 h-0 text-gray-900" for="content">Message</label>
+                        <textarea id="content" class="rounded-2xl px-3 py-2 bg-gray-700" placeholder="Ecrire votre message ici..." name="content" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <input class="flex items-center rounded-full bg-gray-600 font-medium hover:bg-primary px-3 py-2 mt-4" type="submit" value="Envoyer le mail">
+             </form>
         </div>
     </div>
 </template>

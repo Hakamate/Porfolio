@@ -1,5 +1,5 @@
 <template>
-  <div v-if="icon">
+  <div v-if="icon" @click="clickedDynamic()">
     <component :is="icon" :width="width" :height="height" />
   </div>
 </template>
@@ -65,6 +65,7 @@ import { Component, Vue, Prop } from 'nuxt-property-decorator'
     figma: () => import('~/components/Svg/SvgFigma.vue'),
     clickup: () => import('~/components/Svg/SvgClickup.vue'),
     asana: () => import('~/components/Svg/SvgAsana.vue'),
+    hamburger: () => import('~/components/Svg/SvgHamburger.vue'),
   }
 })
 export default class DynamicSvg extends Vue {
@@ -76,6 +77,10 @@ export default class DynamicSvg extends Vue {
 
   @Prop({ default: 20 })
   height!: string
+
+  clickedDynamic () {
+    this.$emit('clickedDynamic')
+  }
 }
 
 </script>

@@ -12,16 +12,16 @@
         <div id="experiences" class="max-w-5xl min-h-screen flex items-center">
             <SectionExperience />
         </div>
-        <div id="competences" class="max-w-5xl min-h-screen flex items-center">
-            <SectionSkill />
-        </div>
         <div id="extra" class="max-w-5xl min-h-screen flex items-center">
             <SectionExtra />
+        </div>
+        <div id="competences" class="max-w-5xl min-h-screen flex items-center">
+            <SectionSkill />
         </div>
         <div id="projects" class="max-w-5xl min-h-screen flex items-center">
             <SectionProject />
         </div>
-        <div id="contact" class="max-w-5xl min-h-screen flex items-center">
+        <div id="contact" class="max-w-5xl  min-h-screen flex items-center">
             <SectionContact />
         </div>
     </div>

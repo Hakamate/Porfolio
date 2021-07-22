@@ -2,7 +2,7 @@
     <div>
         <h2 class="text-4xl text-center font-bold leading-relaxed"><span class="text-primary">EXTRA</span></h2>
         <hr class="border-gray-700 mt-4">
-        <ul class="mt-10 grid grid-cols-3 gap-6">
+        <ul class="mt-10 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
             <li v-for="(experience, index) in experiences" :key="index" class="bg-gray-700 p-4">
                 <div class="flex flex-col">
                     <span class="text-2xl font-semibold">{{ experience.title }}</span>

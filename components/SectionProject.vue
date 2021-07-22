@@ -1,10 +1,10 @@
 <template>
     <div>
-        <h2 class="text-4xl text-center font-bold leading-relaxed"><span class="text-primary">EXTRA</span></h2>
+        <h2 class="text-4xl text-center font-bold leading-relaxed">QUELQUES <span class="text-primary">PROJETS</span></h2>
         <hr class="border-gray-700 mt-4">
-        <ul class="mt-10 grid grid-cols-3 gap-6">
-            <li v-for="(experience, index) in experiences" :key="index" class="bg-gray-700">
-                <img :src="require('~/assets/img/profile.jpg')" class="rounded-2xl">
+        <ul class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <li v-for="(experience, index) in experiences" :key="index">
+                <img :src="require('~/assets/img/profile.jpg')" class="rounded-2xl w-full">
             </li>
         </ul>
     </div>

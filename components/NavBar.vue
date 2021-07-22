@@ -1,5 +1,6 @@
 <template>
-  <div class="sticky top-0 left-0 bottom-0 min-h-screen p-8 bg-gray-800 flex flex-col w-80">
+  <div class="z-10 fixed md:sticky top-0 left-0 bottom-0 min-h-screen p-8 bg-gray-800 flex flex-col w-80 transform">
+      <DynamicSvg class="fixed md:hidden top-4 right-4 bg-gray-600 hover:bg-primary p-2 cursor-pointer" :icon="'close'" @clickedDynamic="toggleMenu()" />
       <div class="text-center flex flex-col items-center justify-center">
         <img src="~assets/img/profile.jpg" alt="Photo de profil" class="rounded-full mb-2"  width="150">
         <h1 class="text-2xl font-bold leading-10">Thomas Clement</h1>
@@ -33,8 +34,8 @@ export default Vue.extend({
                 {title: 'A propos', to:'#about'},
                 {title: 'Formations', to:'#formations'},
                 {title: 'Expériences', to:'#experiences'},
-                {title: 'Compétences', to:'#competences'},
                 {title: 'Extra', to:'#extra'},
+                {title: 'Compétences', to:'#competences'},
                 {title: 'Projets', to:'#projects'},
                 {title: 'Contact', to:'#contact'},
             ],
@@ -45,6 +46,11 @@ export default Vue.extend({
                 {icon: 'github', to:'https://github.com/Hakamate'},
             ]
         }
+    },
+    methods: {
+      toggleMenu() {
+        this.$emit('toggleMenu')
+      }
     }
 })
 </script>

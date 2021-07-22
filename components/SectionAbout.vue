@@ -2,7 +2,7 @@
     <div>
         <h2 class="text-4xl text-center font-bold leading-relaxed"><span class="text-primary">A PROPOS DE</span> MOI</h2>
         <hr class="border-gray-700 mt-4">
-        <div class="mt-10 grid grid-cols-2">
+        <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-10">
             <div>
                 <ul>
                     <li v-for="(info, index) in aboutInfo" :key="index" class="mb-5 last:mb-0">
@@ -15,7 +15,7 @@
                 </ButtonApp>
             </div>
             <div>
-                <ul class="grid grid-cols-2 gap-8">
+                <ul class="grid grid-cols-1 xl:grid-cols-2 gap-6">
                     <li v-for ="(stat, indexS) in aboutStat" :key="indexS" class="p-4 bg-gray-800 flex flex-col items-center justify-center">
                         <span class="text-5xl text-primary mb-2">{{ stat.value }}</span>
                         <p class="font-semibold text-2xl text-center">{{ stat.title }}</p>

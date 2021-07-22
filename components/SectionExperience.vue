@@ -2,14 +2,14 @@
     <div>
         <h2 class="text-4xl text-center font-bold leading-relaxed">MES <span class="text-primary">EXPERIENCES</span></h2>
         <hr class="border-gray-700 mt-4">
-        <ul class="mt-10 grid grid-cols-3 gap-6">
+        <ul class="mt-10 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
             <li v-for="(experience, index) in experiences" :key="index" class="bg-gray-700 p-4">
                 <div class="flex flex-col">
                     <div class="flex items-center">
                         <DynamicSvg :icon="'work'" class="mr-3 bg-primary p-2 rounded-full"/>
                         <span class="text-lg font-medium text-gray-400">{{ experience.date }}</span>
                     </div>
-                    <span class="text-2xl font-semibold">{{ experience.title }}</span>
+                    <span class="text-2xl font-semibold mt-2">{{ experience.title }}</span>
                 </div>
                 <p class="text-lg mt-2 font-medium text-gray-400"> {{ experience.description }}</p>
             </li>
@@ -22,7 +22,7 @@ export default Vue.extend({
     data() {
         return {
             experiences: [
-                {title: 'Assistant Chef de projet / Développeur – Delia', description: 'Développement d\'un outil de mise en relation entre chargés de projet et dirigeants de magasins d’une marque de la grande distribution. Gestion de projet (User stories, cartographie, sprint, relation client)', date:'2020 - 2021 : 4,5 mois'},
+                {title: 'Assistant Chef de projet / Développeur – Delia', description: 'Développement d\'un outil de mise en relation entre chargés de projet et dirigeants de magasins d’une marque de la grande distribution. Gestion de projet (User stories, cartographie, sprint, relation client)', date:'2021 : 4,5 mois'},
                 {title: 'Développeur Web – Netvigie', description: 'Développement d\'un outil interne pour la gestion du parc informatique de l\'entreprise. Intégration du nouveau site et blog seenaptic.com', date:'2020 : 3 mois'},
                 {title: 'Développeur Web – PRIMEVER SERVICES', description: 'Formulaire Php/Javascript, et maintien de l’application GLPI', date:'2019 : 1,5 mois'},
                 {title: 'Développeur Web – PRIMEVER SERVICES', description: 'Frontend, interface utilisateur de GLPI, paramétrage et mise en place de formulaires dynamiques (+ Design RDWeb et Shopify)', date:'2019 : 2,5 mois'},

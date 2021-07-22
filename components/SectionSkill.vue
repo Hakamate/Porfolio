@@ -3,47 +3,38 @@
         <h2 class="text-4xl text-center font-bold leading-relaxed">MES <span class="text-primary">OUTILS ET COMPETENCES</span></h2>
         <hr class="border-gray-700 mt-4">
         <div class="mt-10">
-            <h3 class="text-3xl font-medium mb-2">Frontend</h3>
-            <ul class="grid grid-cols-12 gap-5">
-                <li v-for="(element, indexf) in front" :key="indexf" class="flex flex-col items-center">
-                    <DynamicSvg :icon="element" :width="40" :height="40" class="p-3 rounded-full bg-gray-400 hover:bg-primary flex items-center justify-center" />
-                    <span class="mt-1">{{ elementMaj(element) }}</span>
+            <h3 class="text-3xl font-medium mb-2">Langage / Frontend</h3>
+            <ul class="grid grid-cols-4 sm:grid-cols-7 lg:grid-cols-12 gap-5">
+                <li v-for="(element, indexf) in front" :key="indexf" class="flex flex-col items-center group">
+                    <DynamicSvg :icon="element" :width="30" :height="30" class="p-3 rounded-full bg-gray-400 hover:bg-primary flex items-center justify-center" />
+                    <span class="hidden group-hover:block mt-1">{{ elementMaj(element) }}</span>
                 </li>
             </ul>
         </div>
         <div class="mt-7">
             <h3 class="text-3xl font-medium mb-2">Backend</h3>
-            <ul class="grid grid-cols-12 gap-5 ml-auto">
-                <li v-for="(element, indexb) in back" :key="indexb" class="flex flex-col items-center">
-                    <DynamicSvg :icon="element" :width="40" :height="40" class="p-3 rounded-full bg-gray-400 hover:bg-primary flex items-center justify-center" />
-                    <span class="mt-1">{{ elementMaj(element) }}</span>
+            <ul class="grid grid-cols-4 sm:grid-cols-7 lg:grid-cols-12 gap-5 ml-auto">
+                <li v-for="(element, indexb) in back" :key="indexb" class="flex flex-col items-center group">
+                    <DynamicSvg :icon="element" :width="30" :height="30" class="p-3 rounded-full bg-gray-400 hover:bg-primary flex items-center justify-center" />
+                    <span class="hidden group-hover:block mt-1">{{ elementMaj(element) }}</span>
                 </li>
             </ul>
         </div>
         <div class="mt-7">
             <h3 class="text-3xl font-medium mb-2">Architecture</h3>
-            <ul class="grid grid-cols-12 gap-5">
-                <li v-for="(element, indexa) in architecture" :key="indexa" class="flex flex-col items-center">
-                    <DynamicSvg :icon="element" :width="40" :height="40" class="p-3 rounded-full bg-gray-400 hover:bg-primary flex items-center justify-center" />
-                    <span class="mt-1">{{ elementMaj(element) }}</span>
+            <ul class="grid grid-cols-4 sm:grid-cols-7 lg:grid-cols-12 gap-5">
+                <li v-for="(element, indexa) in architecture" :key="indexa" class="flex flex-col items-center group">
+                    <DynamicSvg :icon="element" :width="30" :height="30" class="p-3 rounded-full bg-gray-400 hover:bg-primary flex items-center justify-center" />
+                    <span class="hidden group-hover:block mt-1">{{ elementMaj(element) }}</span>
                 </li>
             </ul>
         </div>
         <div class="mt-7">
             <h3 class="text-3xl font-medium mb-2">No-code et Low-code</h3>
-            <ul class="grid grid-cols-12 gap-5">
-                <li v-for="(element, indexn) in nocode" :key="indexn" class="flex flex-col items-center">
-                    <DynamicSvg :icon="element" :width="40" :height="40" class="p-3 rounded-full bg-gray-400 hover:bg-primary flex items-center justify-center" />
-                    <span class="mt-1">{{ elementMaj(element) }}</span>
-                </li>
-            </ul>
-        </div>
-        <div class="mt-7">
-            <h3 class="text-3xl font-medium mb-2">Autres</h3>
-            <ul class="grid grid-cols-12 gap-5">
-                <li v-for="(element, indexo) in other" :key="indexo" class="flex flex-col items-center">
-                    <DynamicSvg :icon="element" :width="40" :height="40" class="p-3 rounded-full bg-gray-400 hover:bg-primary flex items-center justify-center" />
-                    <span class="mt-1">{{ elementMaj(element) }}</span>
+            <ul class="grid grid-cols-4 sm:grid-cols-7 lg:grid-cols-12 gap-5">
+                <li v-for="(element, indexn) in nocode" :key="indexn" class="flex flex-col items-center group">
+                    <DynamicSvg :icon="element" :width="30" :height="30" class="p-3 rounded-full bg-gray-400 hover:bg-primary flex items-center justify-center" />
+                    <span class="hidden group-hover:block mt-1">{{ elementMaj(element) }}</span>
                 </li>
             </ul>
         </div>
@@ -54,16 +45,9 @@ import Vue from 'vue'
 export default Vue.extend({
     data() {
         return {
-            other: [
+            front:[
                 "javascript",
                 "typescript",
-                "php",
-                "vscode",
-                "git",
-                "google",
-                "office",
-            ],
-            front:[
                 "htmll",
                 "css",
                 "nuxtjs",
@@ -71,8 +55,6 @@ export default Vue.extend({
                 "reactjs",
                 "tailwind",
                 "vuetify",
-                "bootstrap",
-            
             ],
             back: [
                 "nodejs",
@@ -93,6 +75,7 @@ export default Vue.extend({
                 "netlify",
                 "heroku",
                 "docker",
+                "git",
             ],
             nocode: [
                 "notion",
