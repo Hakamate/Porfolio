@@ -11,7 +11,7 @@
                         </li>
                     </ul>
             </div>
-            <form name="contact" method="POST" data-netlify="true" class="w-full">
+            <form name="contact" method="POST" data-netlify="true" netlify class="w-full">
                     <div class="flex flex-col">
                         <label class="w-0 h-0 text-gray-900" for="fname">Nom complet</label>
                         <input id="fname" class="rounded-2xl px-3 py-2 bg-gray-700" placeholder="Ex: John Doe" type="text">
@@ -19,7 +19,7 @@
 
                     <div class="flex flex-col my-4">
                         <label class="w-0 h-0 text-gray-900" for="email">Email</label>
-                        <input id="email" class="rounded-2xl px-3 py-2 bg-gray-700" placeholder="Ex: nom.prenom@gail.com" type="email">
+                        <input id="email" class="rounded-2xl px-3 py-2 bg-gray-700" placeholder="Ex: nom.prenom@gmail.com" type="email">
                     </div>
 
                     <div class="flex flex-col">
