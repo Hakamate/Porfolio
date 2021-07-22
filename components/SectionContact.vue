@@ -11,7 +11,7 @@
                         </li>
                     </ul>
             </div>
-            <form action="#" methid="post" netlify class="w-full">
+            <form name="contact" netlify class="w-full">
                     <div class="flex flex-col">
                         <label class="w-0 h-0 text-gray-900" for="fname">Nom complet</label>
                         <input id="fname" class="rounded-2xl px-3 py-2 bg-gray-700" placeholder="Ex: John Doe" type="text">
