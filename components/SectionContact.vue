@@ -11,7 +11,7 @@
                         </li>
                     </ul>
             </div>
-            <form name="contact" method="POST" data-netlify="true" class="w-full">
+            <!-- <form name="contact" method="POST" data-netlify="true" class="w-full">
                     <div class="flex flex-col">
                         <label class="w-0 h-0 text-gray-900" for="fname">Nom complet</label>
                         <input id="fname" class="rounded-2xl px-3 py-2 bg-gray-700" placeholder="Ex: John Doe" type="text">
@@ -28,7 +28,25 @@
                     </div>
                     <input type="hidden" name="form-name" value="contact">  
                     <input class="flex items-center rounded-full bg-gray-600 font-medium hover:bg-primary px-3 py-2 mt-4" type="submit" value="Envoyer le mail">
-             </form>
+             </form> -->
+<form name="contact" method="POST" data-netlify="true">
+    <p>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" />
+    </p>
+    <p>
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" />
+    </p>
+    <p>
+      <label for="message">Message</label>
+      <textarea id="message" name="message"></textarea>
+    </p>
+    <p>
+      <button type="submit">Send</button>
+    </p>
+  </form>
+             
         </div>
     </div>
 </template>
