@@ -2,16 +2,16 @@
     <div>
         <h2 class="text-4xl text-center font-bold leading-relaxed">ME <span class="text-primary">CONTACTER</span></h2>
         <hr class="border-gray-700 mt-4">
-        <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-10">
+        <div class="mt-10 grid grid-cols-1 gap-10">
             <div>
                     <ul>
                         <li v-for="(info, indexc) in contactInfo" :key="indexc" class="mb-5 last:mb-0 flex items-center">
                             <DynamicSvg :icon="info.icon" :width="25" :height="25" class="text-primary mr-3"/>
-                            <a :href="info.url" target="_blank" class="text-xl">{{ info.value }}</a>
+                            <a :href="info.url" target="_blank" class="hover:text-primary hover:underline text-xl">{{ info.value }}</a>
                         </li>
                     </ul>
             </div>
-            <form name="contact" method="POST" data-netlify="true" netlify class="w-full">
+            <!-- <form name="contact" method="POST" data-netlify="true" netlify class="w-full">
                     <div class="flex flex-col">
                         <label class="w-0 h-0 text-gray-900" for="fname">Nom complet</label>
                         <input id="fname" class="rounded-2xl px-3 py-2 bg-gray-700" placeholder="Ex: John Doe" type="text">
@@ -28,7 +28,7 @@
                     </div>
                     <input type="hidden" name="form-name" value="contact">  
                     <input class="flex items-center rounded-full bg-gray-600 font-medium hover:bg-primary px-3 py-2 mt-4" type="submit" value="Envoyer le mail">
-             </form>
+             </form> -->
         </div>
     </div>
 </template>
