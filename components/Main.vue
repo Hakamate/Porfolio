@@ -3,24 +3,31 @@
         <div id="presentation" class="max-w-5xl min-h-screen flex items-center">
             <SectionPresentation />
         </div>
+        <div class="py-12 md:py-0" />
         <div id="about" class="max-w-5xl min-h-screen flex items-center">
             <SectionAbout />
         </div>
+        <div class="py-12 md:py-0" />
         <div id="formations" class="max-w-5xl min-h-screen flex items-center">
             <SectionFormation />
         </div>
+        <div class="py-12 md:py-0" />
         <div id="experiences" class="max-w-5xl min-h-screen flex items-center">
             <SectionExperience />
         </div>
+        <div class="py-12 md:py-0" />
         <div id="extra" class="max-w-5xl min-h-screen flex items-center">
             <SectionExtra />
         </div>
+        <div class="py-12 md:py-0" />
         <div id="competences" class="max-w-5xl min-h-screen flex items-center">
             <SectionSkill />
         </div>
+        <div class="py-12 md:py-0" />
         <div id="projects" class="max-w-5xl min-h-screen flex items-center">
             <SectionProject />
         </div>
+        <div class="py-12 md:py-0" />
         <div id="contact" class="max-w-5xl  min-h-screen flex items-center">
             <SectionContact />
         </div>
