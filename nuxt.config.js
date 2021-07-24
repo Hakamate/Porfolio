@@ -50,11 +50,11 @@ export default {
       },
       {
         property: 'og:title',
-        content: 'Développeur Freelance - Thomas CLEMENT Entrepreneur',
+        content: 'Développeur Freelance / Chef de projet IT - Thomas CLEMENT',
       },
       {
         property: 'og:site_name',
-        content: 'Développeur Freelance - Thomas CLEMENT Entrepreneur',
+        content: 'Développeur Freelance / Chef de projet IT - Thomas CLEMENT',
       },
       { property: 'og:type', content: 'website' },
       {
