@@ -2,7 +2,9 @@
     <div>
         <span class="text-3xl">BIENVENUE !</span>
         <h2 class="text-4xl font-bold leading-relaxed">Je m'appelle <span class="text-primary">Thomas</span></h2>
-        <p class="text-xl text-gray-300">Je suis actuellement à Cesi, une école d'ingénieur informatique. Les métiers que j’affectionne se tournent autour du Web ou du développement de logiciels et d'applications. Devenir Product Owner / Scrum Master est mon objectif actuel. Et m’intéresse de plus prés au métier de business développeur et chargée d’affaire.</p>
+        <p class="text-xl text-gray-300">
+            Je suis développeur web / chef de projet IT. Passionné par la technologie et le monde qui l'entoure, j'aime m'investir dans de nombreux projets visant à répondre aux problématiques actuelles.
+            En tant que maker je m’intéresse de plus prés aux métiers de business développeur et chargée d’affaire, et ce, dans l'objectif de compléter mon panel de compétences dans le monde de l'IT.</p>
         <ButtonApp href="#about" class="mt-3 w-max">
             <span class="mr-3">A propos de moi</span>
             <DynamicSvg :icon="'profile'"/>
