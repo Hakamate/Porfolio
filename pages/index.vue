@@ -5,6 +5,7 @@
     <Main class="px-5 sm:px-8 w-full" />
     <a href="#" class="fixed bottom-4 right-4 goingTop">
       <DynamicSvg :icon="'down'" class="transform rotate-180 p-4 rounded-full bg-gray-600 hover:bg-primary"/>
+      <span class="absolute bottom-0 right-0 text-gray-800 w-0 h-0 opacity-0">Revenir en haut</span>
     </a>
   </div>
 </template>

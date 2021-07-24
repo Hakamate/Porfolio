@@ -7,7 +7,7 @@
                     <ul>
                         <li v-for="(info, indexc) in contactInfo" :key="indexc" class="mb-5 last:mb-0 flex items-center">
                             <DynamicSvg :icon="info.icon" :width="25" :height="25" class="text-primary mr-3"/>
-                            <a :href="info.url" target="_blank" class="hover:text-primary hover:underline text-xl">{{ info.value }}</a>
+                            <a :href="info.url" target="_blank" rel="noopener" class="hover:text-primary hover:underline text-xl">{{ info.value }}</a>
                         </li>
                     </ul>
             </div>
