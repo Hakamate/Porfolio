@@ -1,11 +1,11 @@
 <template>
-  <div class="bg-gray-900 flex items-center text-white h-full">
-    <DynamicSvg class="fixed md:hidden top-4 right-4 bg-gray-600 hover:bg-primary p-2 cursor-pointer" :icon="'hamburger'" @clickedDynamic="toggleMenu()" />
+  <div class="flex items-center h-full">
+    <DynamicSvg class="z-20 fixed md:hidden top-4 right-4 bg-gray-600 text-white hover:bg-primary p-2 cursor-pointer" :icon="'hamburger'" @clickedDynamic="toggleMenu()" />
     <NavBar :class="toggleMenuClass()" @toggleMenu="toggleMenu()"/>
-    <Main class="px-5 sm:px-8 w-full" />
+    <Main class="w-full" />
     <a href="#" class="fixed bottom-4 right-4 goingTop">
-      <DynamicSvg :icon="'down'" class="transform rotate-180 p-4 rounded-full bg-gray-600 hover:bg-primary"/>
-      <span class="absolute bottom-0 right-0 text-gray-800 w-0 h-0 opacity-0">Revenir en haut</span>
+      <DynamicSvg :icon="'down'" class="transform rotate-180 p-4 text-white rounded-full bg-black opacity-10 hover:opacity-100 hover:bg-primary"/>
+      <span class="absolute bottom-0 right-0 w-0 h-0 opacity-0">Revenir en haut</span>
     </a>
   </div>
 </template>
@@ -19,13 +19,19 @@ export default Vue.extend({
       menu: false
     }
   },
+  mounted(){
+    // this.$nextTick(async () => {
+    //   this.$nuxt.$loading.start()
+    //   // something to fetch
+    //   this.$nuxt.$loading.finish()
+    // })
+  },
   methods : {
     toggleMenu() {
-      console.log('eeee');
       this.menu = !this.menu
     },
     toggleMenuClass() {
-      return this.menu === false ? '-translate-x-96 md:translate-x-0' : ''
+      return this.menu === false ? 'fadeInNav md:translate-x-0' : 'fadeOutNav md:translate-x-0'
     }
   }
 })
@@ -35,17 +41,51 @@ export default Vue.extend({
 html {
    scroll-behavior: smooth;
 }
-
+body{
+  background-color: #FBFBFF;
+}
 body::-webkit-scrollbar {
   width: 12px;               /* width of the entire scrollbar */
 }
 body::-webkit-scrollbar-track {
-  @apply bg-gray-700; 
+  background: transparent;
+  @apply rounded-lg shadow-custom; 
 }
 body::-webkit-scrollbar-thumb {
   @apply bg-primary;    /* color of the scroll thumb */
 }
 
+.shadow-custom {
+  box-shadow: 0px 5px 20px 0px rgb(69 67 96 / 10%);
+}
+
+@media (max-width: 768px) {
+  .fadeInNav{
+    animation: fadeInNav 0.8s forwards;
+  }
+  .fadeOutNav{
+    animation: fadeOutNav 0.8s forwards;
+  }
+}
+
+
+@keyframes fadeInNav {
+  0% {
+    transform: translateX(-120px)
+  }
+  100% {
+    transform: translateX(0)
+  }
+}
+
+@keyframes fadeOutNav {
+  0% {
+    transform: translateX(0) 
+  }
+  100% {
+    transform: translateX(-120px) 
+  }
+}
 @keyframes goingTop {
   0% {
     transform: translateY(0px);
@@ -61,4 +101,5 @@ body::-webkit-scrollbar-thumb {
 .goingTop:hover {
   animation: goingTop 0.8s infinite
 }
+
 </style>

@@ -1,17 +1,16 @@
 <template>
     <div>
-        <h2 class="text-4xl text-center font-bold leading-relaxed">MES <span class="text-primary">EXPERIENCES</span></h2>
-        <hr class="border-gray-700 mt-4">
+        <h2 class="text-4xl mb-16 font-bold leading-relaxed">MES <span class="text-primary">EXPERIENCES</span></h2>
         <ul class="mt-10 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
-            <li v-for="(experience, index) in experiences" :key="index" class="bg-gray-700 p-4">
+            <li v-for="(experience, index) in experiences" :key="index" class="hover:bg-primary-30 transform hover:-translate-y-2 bg-white rounded-lg shadow-custom p-4">
                 <div class="flex flex-col">
                     <div class="flex items-center">
-                        <DynamicSvg :icon="'work'" class="mr-3 bg-primary p-2 rounded-full"/>
-                        <span class="text-lg font-medium text-gray-400">{{ experience.date }}</span>
+                        <DynamicSvg :icon="'work'" class="mr-3 bg-primary p-2 rounded-full text-white"/>
+                        <span class="text-lg font-medium text-gray-500">{{ experience.date }}</span>
                     </div>
                     <span class="text-2xl font-semibold mt-2">{{ experience.title }}</span>
                 </div>
-                <p class="text-lg mt-2 font-medium text-gray-400"> {{ experience.description }}</p>
+                <p class="text-lg mt-2 font-normal"> {{ experience.description }}</p>
             </li>
         </ul>
     </div>

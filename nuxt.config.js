@@ -9,7 +9,7 @@ export default {
     htmlAttrs: {
       lang: 'en'
     },
-    title: 'Thomas CLEMENT Portfolio',
+    title: 'Thomas CLEMENT Développeur Web - Chef de projet IT',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -72,6 +72,8 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+
+  loading: '~/components/PreLoading.vue',
 
   render: {
     // Setting up cache for 'static' directory - a year in milliseconds

@@ -1,6 +1,6 @@
 <template>
   <div v-if="icon" @click="clickedDynamic()">
-    <component :is="icon" :width="width" :height="height" />
+    <component :is="icon" :width="width" :height="height" class="fill-current"/>
   </div>
 </template>
 
@@ -65,6 +65,10 @@ import { Component, Vue, Prop } from 'nuxt-property-decorator'
     figma: () => import('~/components/Svg/SvgFigma.vue'),
     clickup: () => import('~/components/Svg/SvgClickup.vue'),
     asana: () => import('~/components/Svg/SvgAsana.vue'),
+    tools: () => import('~/components/Svg/SvgTools.vue'),
+    cubes: () => import('~/components/Svg/SvgCubes.vue'),
+    home: () => import('~/components/Svg/SvgHome.vue'),
+    meteor: () => import('~/components/Svg/SvgMeteor.vue'),
     hamburger: () => import('~/components/Svg/SvgHamburger.vue'),
   }
 })

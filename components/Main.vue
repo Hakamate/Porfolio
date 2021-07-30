@@ -1,35 +1,49 @@
 <template>
     <div class="flex flex-col justify-center items-center">
-        <div id="presentation" class="max-w-5xl min-h-screen flex items-center">
-            <SectionPresentation />
+        <div class="w-full bg-gray-800 flex justify-center relative">
+            <div id="presentation" class="max-w-5xl min-h-screen flex items-center w-full px-5 sm:px-8">
+                <LazySectionPresentation class="w-full"/>
+            </div>
         </div>
-        <div class="py-12 md:py-0" />
-        <div id="about" class="max-w-5xl min-h-screen flex items-center">
-            <SectionAbout />
+        <div class="w-full px-5 sm:px-8 flex justify-center">
+            <div id="about" class="py-20 max-w-5xl flex items-center w-full">
+                <LazySectionAbout class="w-full"/>
+            </div>
         </div>
-        <div class="py-12 md:py-0" />
-        <div id="formations" class="max-w-5xl min-h-screen flex items-center">
-            <SectionFormation />
+        <div class="w-full px-5 sm:px-8 flex justify-center">
+            <div id="services" class="py-20 max-w-5xl flex items-center w-full">
+                <LazySectionService class="w-full"/>
+            </div>
         </div>
-        <div class="py-12 md:py-0" />
-        <div id="experiences" class="max-w-5xl min-h-screen flex items-center">
-            <SectionExperience />
+        <div class="w-full px-5 sm:px-8 flex justify-center">
+            <div id="formations" class="py-20 max-w-5xl flex items-center w-full">
+                <LazySectionFormation class="w-full"/>
+            </div>
         </div>
-        <div class="py-12 md:py-0" />
-        <div id="extra" class="max-w-5xl min-h-screen flex items-center">
-            <SectionExtra />
+        <div class="w-full px-5 sm:px-8 flex justify-center">
+            <div id="experiences" class="py-20 max-w-5xl flex items-center w-full">
+                <LazySectionExperience class="w-full"/>
+            </div>
         </div>
-        <div class="py-12 md:py-0" />
-        <div id="competences" class="max-w-5xl min-h-screen flex items-center">
-            <SectionSkill />
+        <div class="w-full px-5 sm:px-8 flex justify-center">
+            <div id="extra" class="py-20 max-w-5xl flex items-center w-full">
+                <LazySectionExtra class="w-full"/>
+            </div>
         </div>
-        <div class="py-12 md:py-0" />
-        <div id="projects" class="max-w-5xl min-h-screen flex items-center">
-            <SectionProject />
+        <div class="w-full px-5 sm:px-8 flex justify-center">
+            <div id="competences" class="py-20 max-w-5xl flex items-center w-full">
+                <LazySectionSkill class="w-full"/>
+            </div>
         </div>
-        <div class="py-12 md:py-0" />
-        <div id="contact" class="max-w-5xl  min-h-screen flex items-center">
-            <SectionContact />
+        <div class="w-full px-5 sm:px-8 flex justify-center">
+            <div id="projects" class="py-20 max-w-5xl flex items-center w-full">
+                <LazySectionProject class="w-full"/>
+            </div>
+        </div>
+        <div class="w-full px-5 sm:px-8 flex justify-center">
+            <div id="contact" class="py-20 max-w-5xl flex items-center w-full">
+                <LazySectionContact class="w-full"/>
+            </div>
         </div>
     </div>
 </template>

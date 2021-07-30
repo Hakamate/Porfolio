@@ -1,12 +1,11 @@
 <template>
     <div>
-        <h2 class="text-4xl text-center font-bold leading-relaxed">QUELQUES <span class="text-primary">PROJETS</span></h2>
-        <hr class="border-gray-700 mt-4">
+        <h2 class="text-4xl mb-16 font-bold leading-relaxed">QUELQUES <span class="text-primary">PROJETS</span></h2>
         <ul class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             <li v-for="(project, index) in projects" :key="index" class="flex flex-col relative hover-description">
-                <img :src="require(`~/assets/img/projets/${project.image}`)" :alt="project.alt" width="0" height="0" class="rounded-2xl h-full w-full">
+                <img :src="require(`~/assets/img/projets/${project.image}`)" :alt="project.alt" width="0" height="0" class="rounded-2xl h-full w-full shadow-custom">
                 <span class="text-xl font-semibold text-center w-full mt-3">{{ project.title }}</span>
-                <div class="p-2 font-medium hidden absolute top-0 left-0 items-center justify-center bg-primary h-full w-full rounded-2xl">
+                <div class="p-2 text-lg text-gray-800 font-normal hidden absolute top-0 left-0 items-center justify-center bg-primary h-full w-full rounded-2xl shadow-custom">
                     <p>{{ project.description }}</p>
                 </div>
             </li>

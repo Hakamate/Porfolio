@@ -1,7 +1,6 @@
 <template>
     <div>
-        <h2 class="text-4xl text-center font-bold leading-relaxed">ME <span class="text-primary">CONTACTER</span></h2>
-        <hr class="border-gray-700 mt-4">
+        <h2 class="text-4xl mb-16 font-bold leading-relaxed">ME <span class="text-primary">CONTACTER</span></h2>
         <div class="mt-10 grid grid-cols-1 gap-10">
             <div>
                     <ul>
@@ -13,18 +12,18 @@
             </div>
             <!-- <form name="contact" method="POST" data-netlify="true" netlify class="w-full">
                     <div class="flex flex-col">
-                        <label class="w-0 h-0 text-gray-900" for="fname">Nom complet</label>
-                        <input id="fname" class="rounded-2xl px-3 py-2 bg-gray-700" placeholder="Ex: John Doe" type="text">
+                        <label class="w-0 h-0 for="fname">Nom complet</label>
+                        <input id="fname" class="rounded-2xl px-3 py-2 bg-white rounded-lg shadow-custom" placeholder="Ex: John Doe" type="text">
                     </div>
 
                     <div class="flex flex-col my-4">
-                        <label class="w-0 h-0 text-gray-900" for="email">Email</label>
-                        <input id="email" class="rounded-2xl px-3 py-2 bg-gray-700" placeholder="Ex: nom.prenom@gmail.com" type="email">
+                        <label class="w-0 h-0 for="email">Email</label>
+                        <input id="email" class="rounded-2xl px-3 py-2 bg-white rounded-lg shadow-custom" placeholder="Ex: nom.prenom@gmail.com" type="email">
                     </div>
 
                     <div class="flex flex-col">
-                        <label class="w-0 h-0 text-gray-900" for="content">Message</label>
-                        <textarea id="content" class="rounded-2xl px-3 py-2 bg-gray-700" placeholder="Ecrire votre message ici..." name="content" cols="30" rows="10"></textarea>
+                        <label class="w-0 h-0 for="content">Message</label>
+                        <textarea id="content" class="rounded-2xl px-3 py-2 bg-white rounded-lg shadow-custom" placeholder="Ecrire votre message ici..." name="content" cols="30" rows="10"></textarea>
                     </div>
                     <input type="hidden" name="form-name" value="contact">  
                     <input class="flex items-center rounded-full bg-gray-600 font-medium hover:bg-primary px-3 py-2 mt-4" type="submit" value="Envoyer le mail">

@@ -1,27 +1,21 @@
 <template>
-  <div class="z-10 fixed md:sticky top-0 left-0 bottom-0 min-h-screen p-8 bg-gray-800 flex flex-col w-80 transform">
-      <DynamicSvg class="fixed md:hidden top-4 right-4 bg-gray-600 hover:bg-primary p-2 cursor-pointer" :icon="'close'" @clickedDynamic="toggleMenu()" />
+  <div class="z-10 fixed md:sticky top-0 left-0 bottom-0 min-h-screen p-8 bg-gray-800 flex flex-col justify-between transform">
+      <DynamicSvg class="md:hidden bg-gray-600 hover:bg-primary p-1 cursor-pointer mb-4 mx-auto text-white" :icon="'close'" @clickedDynamic="toggleMenu()" />
       <div class="text-center flex flex-col items-center justify-center">
-        <img src="~assets/img/profile.jpg" width="0" height="0" alt="Photo de profil Thomas CLEMENT" class="rounded-full mb-2 w-24">
-        <div class="hidden md:block">
-          <h1 class="text-2xl font-bold leading-10">Thomas Clement</h1>
-          <h2 class="text-xl font-semibold text-gray-200">Chef de projet IT</h2>
-        </div>
+        <img src="~assets/img/profile.jpg" width="0" height="0" alt="Photo de profil Thomas CLEMENT" class="rounded-full mb-2 w-12">
       </div>
-      <ul class="mt-2 md:mt-6">
+      <ul class="my-auto grid gap-7">
           <li v-for="(navigation, index) in navigations" :key="index">
-            <ButtonApp :href="navigation.to" class="w-full mt-3" @clickedButton="toggleMenu()">
-                <span class="w-full text-center">{{ navigation.title }}</span>
-            </ButtonApp>
+            <a :href="navigation.to" class="flex justify-center" @clickedButton="toggleMenu()">
+              <DynamicSvg :icon="navigation.icon" class="text-gray-500 hover:text-primary" :width="25" :height="25" />
+            </a>
           </li>
       </ul>
-      <div class="mt-auto">
-          <div class="flex items-center justify-center">
-            <a v-for="(contact, indexc) in contacts" :key="indexc" rel="noopener" target="_blank" :href="contact.to" class="w-10 h-10 mr-2 last:mr-0 bg-gray-600 hover:bg-primary rounded-full flex items-center justify-center">
-              <DynamicSvg :icon="contact.icon"/>
-              <span class="text-gray-800 w-0 h-0 opacity-0">{{ contact.icon }}</span>
-            </a>
-          </div>
+      <div class="grid gap1">
+        <a v-for="(contact, indexc) in contacts" :key="indexc" rel="noopener" target="_blank" :href="contact.to" class="mx-auto w-8 h-8 p-2 hover:bg-primary rounded-full flex items-center justify-center">
+          <DynamicSvg :icon="contact.icon" class="text-gray-500" :width="20" :height="20" />
+          <span class="w-0 h-0 opacity-0">{{ contact.icon }}</span>
+        </a>
       </div>
   </div>
 </template>
@@ -33,14 +27,15 @@ export default Vue.extend({
     data(){
         return {
             navigations: [
-                {title: 'Présentation', to:'#presentation'},
-                {title: 'A propos', to:'#about'},
-                {title: 'Formations', to:'#formations'},
-                {title: 'Expériences', to:'#experiences'},
-                {title: 'Extra', to:'#extra'},
-                {title: 'Compétences', to:'#competences'},
-                {title: 'Projets', to:'#projects'},
-                {title: 'Contact', to:'#contact'},
+                {icon:'home', title: 'Présentation', to:'#presentation'},
+                {icon:'profile', title: 'A propos', to:'#about'},
+                {icon:'meteor', title: 'Services', to:'#services'},
+                {icon:'graduation', title: 'Formations', to:'#formations'},
+                {icon:'work', title: 'Expériences', to:'#experiences'},
+                {icon:'info', title: 'Extra', to:'#extra'},
+                {icon:'tools', title: 'Compétences', to:'#competences'},
+                {icon:'cubes', title: 'Projets', to:'#projects'},
+                {icon:'phone', title: 'Contact', to:'#contact'},
             ],
             contacts: [
                 {icon: 'linkedin', to:'https://www.linkedin.com/in/thomas-clmt/'},
