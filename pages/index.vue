@@ -31,7 +31,7 @@ export default Vue.extend({
       this.menu = !this.menu
     },
     toggleMenuClass() {
-      return this.menu === false ? 'fadeInNav md:translate-x-0' : 'fadeOutNav md:translate-x-0'
+      return this.menu === false ? 'fadeOutNav md:translate-x-0' : 'fadeInNav md:translate-x-0'
     }
   }
 })
