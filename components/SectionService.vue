@@ -23,7 +23,7 @@ export default Vue.extend({
                 {color:'bg-blue-500' ,icon:'meteor', title: 'Web Services', description: 'Création et installation de WebServices (API)'},
                 {color:'bg-purple-500' ,icon:'meteor', title: 'Intégration Web', description: 'Transformer vos maquettes en sites vitrine (Application, Portfolio, Informations entreprise, etc...)'},
                 {color:'bg-yellow-500' ,icon:'meteor', title: 'Accompagnement No-code', description: 'Accompagnement dans la mise en place d\'outils No-code'},
-                {color:'bg-pink-500' ,icon:'meteor', title: '"Developpement" No-code', description: 'Création d\'Outils / Applications / Sites / Base de données No-code'},
+                {color:'bg-pink-500' ,icon:'meteor', title: '"Developpement" No-code', description: 'Création d\'Outils / Applications / Sites / Base de données en No-code'},
             ],
         }
     }
