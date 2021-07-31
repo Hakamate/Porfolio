@@ -2,7 +2,7 @@
     <div>
         <h2 class="text-4xl mb-16 font-bold leading-relaxed"><span class="text-primary">EXTRA</span></h2>
         <ul class="mt-10 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
-            <li v-for="(experience, index) in experiences" :key="index" class="bg-white hover:bg-primary-30 transform hover:-translate-y-2 rounded-lg shadow-custom p-4">
+            <li v-for="(experience, index) in experiences" :key="index" class="bg-white hover:bg-primary-30 transition duration-500 transform hover:-translate-y-2 rounded-lg shadow-custom p-4">
                 <div class="flex flex-col">
                     <span class="text-2xl font-semibold">{{ experience.title }}</span>
                 </div>

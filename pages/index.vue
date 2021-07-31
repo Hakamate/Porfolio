@@ -1,6 +1,6 @@
 <template>
   <div class="flex items-center h-full">
-    <DynamicSvg class="z-20 fixed md:hidden top-4 right-4 bg-gray-600 text-white hover:bg-primary p-2 cursor-pointer" :icon="'hamburger'" @clickedDynamic="toggleMenu()" />
+    <DynamicSvg class="z-20 fixed md:hidden top-4 right-4 bg-gray-600 text-white transition duration-500 hover:bg-primary p-2 cursor-pointer" :icon="'hamburger'" @clickedDynamic="toggleMenu()" />
     <NavBar :class="toggleMenuClass()" @toggleMenu="toggleMenu()"/>
     <Main class="w-full" />
     <a href="#" class="fixed bottom-4 right-4 goingTop">

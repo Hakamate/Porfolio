@@ -2,7 +2,7 @@
     <div>
         <h2 class="text-4xl mb-16 font-bold leading-relaxed">MES <span class="text-primary">SERVICES FREELANCE</span></h2>
         <ul class="mt-10 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
-            <li v-for="(service, index) in services" :key="index" class="transform hover:-translate-y-2 rounded-lg shadow-custom p-4 flex flex-col items-center justify-center" :class="service.color">
+            <li v-for="(service, index) in services" :key="index" class="transition duration-500 transform hover:-translate-y-2 rounded-lg shadow-custom p-4 flex flex-col items-center justify-center" :class="service.color">
                 <DynamicSvg :icon="'meteor'" class="text-white py-2" :width="50" :height="50"/>
                 <div class="flex flex-col justify-center items-center text-center text-white">
                     <h3 class="text-2xl font-bold">{{ service.title }}</h3>

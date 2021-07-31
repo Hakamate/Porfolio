@@ -18,7 +18,7 @@
             
             <div>
                 <ul class="grid grid-cols-1 xl:grid-cols-2 gap-6">
-                    <li v-for ="(stat, indexS) in aboutStat" :key="indexS" class="transform hover:-translate-y-2 group hover:bg-primary p-4 bg-white rounded-lg shadow-custom flex flex-col items-center justify-center">
+                    <li v-for ="(stat, indexS) in aboutStat" :key="indexS" class="transform hover:-translate-y-2 transition duration-500 group hover:bg-primary p-4 bg-white rounded-lg shadow-custom flex flex-col items-center justify-center">
                         <span class="group-hover:text-white text-5xl text-primary mb-2">{{ stat.value }}</span>
                         <p class="group-hover:text-white font-semibold text-2xl text-center">{{ stat.title }}</p>
                     </li>
