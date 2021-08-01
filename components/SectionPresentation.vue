@@ -1,9 +1,9 @@
 <template>
-    <div  class="text-white">
+    <div  class="text-white text-shadow-lg">
         <span class="text-3xl">BIENVENUE !</span>
         <h2 class="text-4xl font-bold leading-relaxed">Moi c'est <span class="text-primary">Thomas</span></h2>
         <p class="text-2xl mb-2">Je suis <span id="im" class="text-2xl underline"></span></p>
-        <p class="text-xl">
+        <p class="text-xl text-shadow-xl">
             Passionné par la technologie et le monde qui l'entoure, j'aime m'investir dans de nombreux projets visant à répondre aux problématiques actuelles.
             En tant que maker je m’intéresse de plus prés aux métiers de business développeur et chargée d’affaire, et ce, dans l'objectif de compléter mon panel de compétences dans le monde de l'IT.</p>
         <ButtonApp href="#about" class="mt-3 w-max">
@@ -29,6 +29,14 @@
     100% {
         @apply text-white
     }
+}
+
+.text-shadow-xl {
+    text-shadow: 0px 2px 10px rgb(46 46 46);
+}
+
+.text-shadow-lg {
+    text-shadow: 1px 1px 3px rgb(46 46 46);;
 }
 
 .icon-scroll {

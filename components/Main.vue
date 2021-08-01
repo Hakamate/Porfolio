@@ -18,8 +18,8 @@
                     <div data-depth="0.4" class="h-full w-full" ><DynamicSvg id="parallax-symbol13" :width="30" :height="30" :icon="'css'" class="absolute text-primary"/></div>
                 </div>
             </div>
-            <div id="presentation" class=" absolute max-w-5xl min-h-screen flex items-center w-full px-5 sm:px-8">
-                <LazySectionPresentation class="w-full"/>
+            <div id="presentation" class="absolute max-w-5xl min-h-screen flex items-center w-full">
+                <LazySectionPresentation class="bg-white-custom w-full p-5 sm:p-8"/>
             </div>
         </div>
         <div class="w-full px-5 sm:px-8 flex justify-center">
@@ -98,6 +98,9 @@ export default Vue.extend({
 #parallax-symbol12 { top: 50%; right: 50% }
 #parallax-symbol13 { top: 91%; right: 10% }
 
+.bg-white-custom {
+    background-color: rgb(255, 255, 255, 0.5);
+}
 
 .text h1{
     font-family:  Verdana, sans-serif;
