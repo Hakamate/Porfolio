@@ -4,7 +4,7 @@
         <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-10">
             <form 
                 name="contactus" 
-                action="#contact" 
+                action="/merci" 
                 method="post" 
                 netlify
                 netlify-honeypot="bot-field"
