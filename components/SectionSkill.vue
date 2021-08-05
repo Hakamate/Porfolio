@@ -29,7 +29,7 @@
             </ul>
         </div>
         <div class="mt-7">
-            <h3 class="text-3xl font-medium mb-3">No-code et Low-code</h3>
+            <h3 class="text-3xl font-medium mb-3">No/Low-code et Gestion de projet</h3>
             <ul class="grid grid-cols-4 sm:grid-cols-7 lg:grid-cols-12 gap-5">
                 <li v-for="(element, indexn) in nocode" :key="indexn" class="flex flex-col items-center group">
                     <DynamicSvg :icon="element" :width="30" :height="30" class="p-3 rounded-full bg-gray-200 transition duration-500 hover:bg-primary flex items-center justify-center" />
@@ -78,13 +78,18 @@ export default Vue.extend({
             ],
             nocode: [
                 "notion",
+                "clickup",
+                "asana",
+                "jira",
+                "confluence",
+                "miro",
+                "trello",
+                "scrum",
                 "bubble",
                 "zapier",
                 "integromat",
                 "airtable",
                 "mailchimp",
-                "clickup",
-                "asana",
                 "figma",
                 "strapi",
                 "wordpress",

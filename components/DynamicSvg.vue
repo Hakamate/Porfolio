@@ -69,6 +69,11 @@ import { Component, Vue, Prop } from 'nuxt-property-decorator'
     cubes: () => import('~/components/Svg/SvgCubes.vue'),
     home: () => import('~/components/Svg/SvgHome.vue'),
     meteor: () => import('~/components/Svg/SvgMeteor.vue'),
+    jira: () => import('~/components/Svg/SvgJira.vue'),
+    confluence: () => import('~/components/Svg/SvgConfluence.vue'),
+    trello: () => import('~/components/Svg/SvgTrello.vue'),
+    scrum: () => import('~/components/Svg/SvgScrum.vue'),
+    miro: () => import('~/components/Svg/SvgMiro.vue'),
     hamburger: () => import('~/components/Svg/SvgHamburger.vue'),
   }
 })
