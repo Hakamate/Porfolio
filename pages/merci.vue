@@ -1,6 +1,8 @@
 <template>
-    <div class="flex flex-col justify-center items-center min-h-screen min-w-screen">
-        <svg width="910" height="731" viewBox="0 0 910 731" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="flex flex-col justify-center items-center min-h-screen min-w-screen p-5">
+        <p class="text-2xl text-center">Merci d'avoir pris le temps de me contacter</p>
+        <p class="text-center text-xl my-6">Pour retourner sur le site, c'est par <a href="/" class="font-semibold hover:underline text-primary">ici</a></p>
+        <svg width="500" height="500" class="w-full" viewBox="0 0 910 731" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="Thanks" clip-path="url(#clip0)">
                 <path id="Vector" d="M379.754 191.776C379.698 86.91 294.642 1.94441 189.776 2.00003C84.91 2.05571 -0.0556826 87.1115 2.73801e-05 191.978C0.0135753 217.605 5.21481 242.964 15.2904 266.528C15.1047 266.322 14.9129 266.121 14.7281 265.913C23.1619 285.57 34.8536 303.662 49.3104 319.427C49.3535 319.474 49.3978 319.521 49.4412 319.568C50.6076 320.839 51.7807 322.104 52.981 323.343C70.3325 341.441 91.1062 355.911 114.096 365.915C137.086 375.918 161.834 381.255 186.903 381.615L180.487 730.108H200.31L196.298 500.099L224.972 485.002L220.597 476.694L196.114 489.584L194.231 381.598C243.822 380.461 290.998 359.963 325.67 324.488C360.341 289.014 379.753 241.38 379.754 191.776Z" fill="#F2F2F2"/>
                 <g id="thanks">
@@ -43,8 +45,6 @@
                 </clipPath>
             </defs>
         </svg>
-        <p class="text-2xl mt-10">Merci d'avoir pris le temps de me contacter</p>
-        <p class="text-center text-xl mt-6">Pour retourner sur le site, c'est par <a href="/" class="font-semibold hover:underline text-primary">ici</a></p>
     </div>
 </template>
 
