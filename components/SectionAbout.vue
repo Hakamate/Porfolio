@@ -10,7 +10,7 @@
                         <p class="text-xl"><span class="font-semibold text-primary mr-1">{{ info.title }} :</span> {{ info.value }}</p>
                     </li>
                 </ul>
-                <ButtonApp :href="'/documents/CV Thomas CLEMENT - Chef de projet IT.pdf'" target="_blank" class="bg-primary text-white w-max mt-4 transform hover:scale-125">
+                <ButtonApp :href="'/documents/CV Thomas CLEMENT - Chef de projet IT.pdf'" target="_blank" class="bg-primary text-white w-max mt-4 transition duration-500 transform hover:scale-125">
                     <span class="mr-3 text-xl">Télécharger mon CV</span>
                     <DynamicSvg :icon="'download'" />
                 </ButtonApp>

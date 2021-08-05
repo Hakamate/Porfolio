@@ -10,6 +10,7 @@
                 </div>
             </li>
         </ul>
+        <p class="text-center text-xl mt-6">Un besoin spécifique ? N'hésitez pas à me contacter <a href="#contact" class="font-semibold hover:underline text-primary">ici</a></p>
     </div>
 </template>
 <script lang="ts">
