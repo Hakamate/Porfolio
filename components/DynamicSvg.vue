@@ -74,6 +74,8 @@ import { Component, Vue, Prop } from 'nuxt-property-decorator'
     trello: () => import('~/components/Svg/SvgTrello.vue'),
     scrum: () => import('~/components/Svg/SvgScrum.vue'),
     miro: () => import('~/components/Svg/SvgMiro.vue'),
+    eye: () => import('~/components/Svg/SvgEye.vue'),
+    before: () => import('~/components/Svg/SvgBefore.vue'),
     hamburger: () => import('~/components/Svg/SvgHamburger.vue'),
   }
 })

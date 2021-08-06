@@ -1,6 +1,11 @@
 <template>
     <div>
-        <h2 class="text-4xl mb-16 font-bold leading-relaxed">ME <span class="text-primary">CONTACTER</span></h2>
+        <!-- <h2 class="text-4xl mb-16 font-bold leading-relaxed">ME <span class="text-primary">CONTACTER</span></h2> -->
+        <h2 class="text-4xl mb-16 font-black leading-relaxed flex">
+            <DynamicSvg :icon="'down'" :width="40" :height="40" class="text-gray-300 transform -rotate-90 hidden sm:flex"/>
+            <span>Me contacter</span>
+            <DynamicSvg :icon="'down'" :width="40" :height="40" class="text-gray-300 transform rotate-90 hidden sm:flex"/>
+        </h2>
         <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-10">
             <form 
                 name="contactus" 
@@ -12,18 +17,22 @@
             >
                 <input type="hidden" name="form-name" value="contactus" />
                 <div class="flex flex-col">  
-                    <label class="w-0 h-0" for="name">Name:</label> 
-                    <input type="text" name="name" class="rounded-lg focus:outline-none px-3 py-2 bg-white shadow-custom placeholder-gray-400" placeholder="Ex: John Doe" required/>
+                    <label class="w-0 h-0 ml-6" for="name">Name:</label> 
+                    <input type="text" name="name" class="rounded-2xl focus:outline-none p-4 bg-white shadow-custom placeholder-gray-400" placeholder="Nom complet..." required/>
+                </div>
+                <div class="flex flex-col">  
+                    <label class="w-0 h-0 ml-6" for="object">Objet:</label> 
+                    <input type="text" name="object" class="rounded-2xl focus:outline-none p-4 bg-white shadow-custom placeholder-gray-400" placeholder="Sujet du message..." required/>
                 </div>
                 <div class="flex flex-col">
-                    <label class="w-0 h-0" for="email">Email:</label>
-                    <input type="email" name="email" class="rounded-lg focus:outline-none px-3 py-2 bg-white shadow-custom placeholder-gray-400" placeholder="Ex: nom.prenom@gmail.com" required/>
+                    <label class="w-0 h-0 ml-6" for="email">Email:</label>
+                    <input type="email" name="email" class="rounded-2xl focus:outline-none p-4 bg-white shadow-custom placeholder-gray-400" placeholder="Adresse email..." required/>
                 </div>
                 <div class="flex flex-col">
-                    <label class="w-0 h-0" for="message">Message:</label>
-                    <textarea name="message" class="rounded-lg focus:outline-none px-3 py-2 bg-white shadow-custom placeholder-gray-400" placeholder="Ecrire votre message ici..." required></textarea>
+                    <label class="w-0 h-0 ml-6" for="message">Message:</label>
+                    <textarea name="message" class="rounded-2xl focus:outline-none p-4 bg-white shadow-custom placeholder-gray-400" placeholder="Ecrire votre message ici..." required></textarea>
                 </div>
-                <button type="submit" class="flex items-center rounded-full text-white font-medium bg-primary px-3 py-2 w-24 transition duration-500 transform hover:scale-110" value="Send message"><span class="w-full text-center">Envoyer</span></button>
+                <button type="submit" class="flex items-center rounded-full text-white font-semibold bg-primary px-3 py-2 w-24 transition duration-500 transform hover:scale-110" value="Send message"><span class="w-full text-center">Envoyer</span></button>
             </form>
             <div>
                     <ul>
@@ -33,24 +42,6 @@
                         </li>
                     </ul>
             </div>
-            <!-- <form name="contact" method="POST" data-netlify="true" netlify class="w-full">
-                    <div class="flex flex-col">
-                        <label class="w-0 h-0 for="fname">Nom complet</label>
-                        <input id="fname" class="rounded-lg focus:outline-none px-3 py-2 bg-white rounded-lg shadow-custom placeholder-gray-400" placeholder="Ex: John Doe" type="text">
-                    </div>
-
-                    <div class="flex flex-col my-4">
-                        <label class="w-0 h-0 for="email">Email</label>
-                        <input id="email" class="rounded-lg focus:outline-none px-3 py-2 bg-white rounded-lg shadow-custom placeholder-gray-400" placeholder="Ex: nom.prenom@gmail.com" type="email">
-                    </div>
-
-                    <div class="flex flex-col">
-                        <label class="w-0 h-0 for="content">Message</label>
-                        <textarea id="content" class="rounded-lg focus:outline-none px-3 py-2 bg-white rounded-lg shadow-custom placeholder-gray-400" placeholder="Ecrire votre message ici..." name="content" cols="30" rows="10"></textarea>
-                    </div>
-                    <input type="hidden" name="form-name" value="contact">  
-                    <input class="flex items-center rounded-full bg-gray-600 font-medium hover:bg-primary px-3 py-2 mt-4" type="submit" value="Envoyer le mail">
-             </form> -->
         </div>
     </div>
 </template>

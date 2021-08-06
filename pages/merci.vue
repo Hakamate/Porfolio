@@ -69,4 +69,19 @@
         transform:  rotate(-2deg); 
     }
 }
+
+body{
+  background-color: #f9faff;
+  font-family: Rubik, sans-serif;
+}
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: transparent;
+  @apply rounded-lg; 
+}
+body::-webkit-scrollbar-thumb {
+  @apply bg-primary;    /* color of the scroll thumb */
+}
 </style>

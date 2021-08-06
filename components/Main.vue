@@ -19,7 +19,7 @@
                 </div>
             </div>
             <div id="presentation" class="absolute max-w-5xl min-h-screen flex items-center w-full">
-                <LazySectionPresentation class="bg-white-custom w-full p-5 sm:p-8"/>
+                <LazySectionPresentation class="bg-white-custom w-full p-5 sm:p-8 mx-6"/>
             </div>
         </div>
         <div class="w-full px-5 sm:px-8 flex justify-center">
@@ -27,17 +27,17 @@
                 <LazySectionAbout class="w-full"/>
             </div>
         </div>
-        <div class="w-full px-5 sm:px-8 flex justify-center">
-            <div id="experiences" class="py-20 max-w-5xl flex items-center w-full">
-                <LazySectionExperience class="w-full"/>
-            </div>
-        </div>
-        <div class="w-full px-5 sm:px-8 flex justify-center">
+        <div class="w-full px-5 sm:px-8 flex justify-center bg-gray-800">
             <div id="services" class="py-20 max-w-5xl flex items-center w-full">
                 <LazySectionService class="w-full"/>
             </div>
         </div>
         <div class="w-full px-5 sm:px-8 flex justify-center">
+            <div id="experiences" class="py-20 max-w-5xl flex items-center w-full">
+                <LazySectionExperience class="w-full"/>
+            </div>
+        </div>
+        <div class="w-full px-5 sm:px-8 flex justify-center bg-gray-800">
             <div id="formations" class="py-20 max-w-5xl flex items-center w-full">
                 <LazySectionFormation class="w-full"/>
             </div>
@@ -47,12 +47,17 @@
                 <LazySectionSkill class="w-full"/>
             </div>
         </div>
+        <div class="w-full px-5 sm:px-8 flex justify-center bg-gray-800">
+            <div id="interest" class="py-20 max-w-5xl flex items-center w-full">
+                <LazySectionInterest class="w-full"/>
+            </div>
+        </div>
         <div class="w-full px-5 sm:px-8 flex justify-center">
             <div id="projects" class="py-20 max-w-5xl flex items-center w-full">
                 <LazySectionProject class="w-full"/>
             </div>
         </div>
-        <div class="w-full px-5 sm:px-8 flex justify-center">
+        <div class="w-full px-5 sm:px-8 flex justify-center bg-gray-800">
             <div id="extra" class="py-20 max-w-5xl flex items-center w-full">
                 <LazySectionExtra class="w-full"/>
             </div>

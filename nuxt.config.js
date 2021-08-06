@@ -99,6 +99,8 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+
+    '@nuxtjs/google-fonts'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -113,6 +115,14 @@ export default {
     }],
     '@nuxtjs/robots'
   ],
+
+
+  googleFonts: {
+    families: {
+      // a simple name
+      Rubik: true,
+    }
+  },
 
   robots: {
     UserAgent: '*',

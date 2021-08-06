@@ -1,5 +1,5 @@
 <template>
-    <div  class="text-white text-shadow-lg">
+    <div class="text-white text-shadow-lg">
         <span class="text-3xl">BIENVENUE !</span>
         <h2 class="text-4xl font-bold leading-relaxed">Moi c'est <span class="text-primary">Thomas</span></h2>
         <p class="text-2xl mb-2">Je suis <span id="im" class="text-2xl underline"></span></p>

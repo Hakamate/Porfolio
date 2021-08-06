@@ -1,8 +1,12 @@
 <template>
     <div>
-        <h2 class="text-4xl mb-16 font-bold leading-relaxed">MES <span class="text-primary">SERVICES FREELANCE</span></h2>
+        <h2 class="text-4xl mb-16 font-black leading-relaxed flex text-white">
+            <DynamicSvg :icon="'down'" :width="40" :height="40" class="text-gray-300 transform -rotate-90 hidden sm:flex"/>
+            <span class="z-20">Mes services freelance</span>
+            <DynamicSvg :icon="'down'" :width="40" :height="40" class="text-gray-300 transform rotate-90 hidden sm:flex"/>
+        </h2>
         <ul class="mt-10 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
-            <li v-for="(service, index) in services" :key="index" class="transition duration-500 transform hover:-translate-y-2 rounded-lg shadow-custom p-4 flex flex-col items-center justify-center" :class="service.color">
+            <li v-for="(service, index) in services" :key="index" class="transition duration-500 transform hover:-translate-y-2 rounded-lg shadow-custom p-6 flex flex-col items-center justify-center" :class="service.color">
                 <DynamicSvg :icon="'meteor'" class="text-white py-2" :width="50" :height="50"/>
                 <div class="flex flex-col justify-center items-center text-center text-white">
                     <h3 class="text-2xl font-bold">{{ service.title }}</h3>
@@ -10,7 +14,7 @@
                 </div>
             </li>
         </ul>
-        <p class="text-center text-xl mt-6">Un besoin spécifique ? N'hésitez pas à me contacter <a href="#contact" class="font-semibold hover:underline text-primary">ici</a></p>
+        <p class="text-center text-xl text-white mt-6">Je suis disponible sur <a href="https://www.malt.fr/profile/thomasclement" target="_blank" class="font-semibold hover:underline text-primary">malt.fr</a> ou par <a href="#contact" class="font-semibold hover:underline text-primary">message</a></p>
     </div>
 </template>
 <script lang="ts">

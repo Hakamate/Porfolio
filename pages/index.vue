@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center h-full">
+  <div class="flex items-center h-full text-gray-800">
     <DynamicSvg class="z-20 fixed md:hidden top-4 right-4 bg-gray-600 text-white transition duration-500 hover:bg-primary p-2 cursor-pointer" :icon="'hamburger'" @clickedDynamic="toggleMenu()" />
     <NavBar :class="toggleMenuClass()" @toggleMenu="toggleMenu()"/>
     <Main class="w-full" />
@@ -42,7 +42,8 @@ html {
    scroll-behavior: smooth;
 }
 body{
-  background-color: #FBFBFF;
+  background-color: #f9faff;
+  font-family: Rubik, sans-serif;
 }
 body::-webkit-scrollbar {
   width: 12px;               /* width of the entire scrollbar */
