@@ -19,7 +19,7 @@
                 </div>
             </div>
             <div id="presentation" class="absolute max-w-5xl min-h-screen flex items-center w-full">
-                <LazySectionPresentation class="bg-white-custom w-full p-5 sm:p-8 mx-6"/>
+                <LazySectionPresentation class="bg-white-custom w-full p-5 sm:p-8 mx-5"/>
             </div>
         </div>
         <div class="w-full px-5 sm:px-8 flex justify-center">

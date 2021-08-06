@@ -19,9 +19,9 @@
                 <div class="card h-full">
                     <div class="card-body">
                         <img :src="require(`~/assets/img/projets/${project.image}`)" :alt="project.alt" width="0" height="0" class="card-front rounded-2xl h-full w-full shadow-custom">
-                        <div class="card-back p-3 text-lg bg-white flex flex-col">
-                            <span class="text-lg font-semibold mb-1">{{ project.title }}</span>
-                            <span class="text-sm">{{ project.description }}</span> 
+                        <div class="card-back py-3 px-4 text-lg bg-white flex flex-col items-center justify-center">
+                            <span class="text-lg font-semibold mb-1 text-center">{{ project.title }}</span>
+                            <span class="text-sm text-center">{{ project.description }}</span> 
                         </div>
                     </div>
                 </div>
@@ -39,7 +39,7 @@ export default Vue.extend({
                 {image: 'login_searchii.png', title: 'Searchii', alt:'Image Searchii', description: 'Vous êtes actuellement en recherche de CDD, CDI, Stage, Alternance ou tout simplement d\'un job ? Inscrivez-vous et bénéficiez d\'un outil de suivi.'},
                 {image: 'oneforalldiscordbot.png', title: 'OneForAll Discord bot', alt:'Image OneForAll Discord bot', description: 'Un bot discord qui permet de réaliser tout type de commandes (stats, quizzs, news, organisation, événements vocaux, etc...)'},
                 {image: 'swiper_zumee.png', title: 'Zumee', alt:'Image Zumee', description: 'Rendre le recrutement plus dynamique en passant par le support qu\'est la vidéo de présentation'},
-                {image: 'popup_nocodz.png', title: 'NoCodz', alt:'Image NoCodz', description: 'L\'extension chrome qui répertorie des outils No-code'},
+                {image: 'popup_nocodz.png', title: 'NoCodz', alt:'Image NoCodz', description: 'Une extension chrome qui permet de répertorier des outils No-code par catégorie'},
                 {image: 'lp_levioss.png', title: 'Levioss', alt:'Image Levioss', description: 'Lévioss permet la mise en relation entre recruteurs et étudiants tout en souhaitant lutter contre la discrimination.'},
                 {image: 'home_seenaptic.png', title: 'Seenaptic', alt:'Image Seenaptic', description: 'Outil de Data Quality, seenaptic vous aide à garantir la qualité de votre Tag Management et de vos données Analytics'},
                 {image: 'login_foodzup.jpg', title: 'Foodzup', alt:'Image Foodzup', description: 'Clone d\'Ubereat avec une grande infrastructure (2 Bases de données, 3 applications, 1 client lourd, Kubernetes et Docker, développé avec Nuxtjs, TailwindCSS, NestJs et C#'},
