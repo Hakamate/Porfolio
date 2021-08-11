@@ -22,47 +22,47 @@
                 <LazySectionPresentation class="bg-white-custom w-full p-5 sm:p-8 mx-5"/>
             </div>
         </div>
-        <div class="w-full px-5 sm:px-8 flex justify-center">
+        <div class="w-full px-5 sm:px-8 flex justify-center tile">
             <div id="about" class="py-20 max-w-5xl flex items-center w-full">
                 <LazySectionAbout class="w-full"/>
             </div>
         </div>
-        <div class="w-full px-5 sm:px-8 flex justify-center bg-gray-800">
+        <div class="w-full px-5 sm:px-8 flex justify-center tile bg-gray-800">
             <div id="services" class="py-20 max-w-5xl flex items-center w-full">
                 <LazySectionService class="w-full"/>
             </div>
         </div>
-        <div class="w-full px-5 sm:px-8 flex justify-center">
+        <div class="w-full px-5 sm:px-8 flex justify-center tile">
             <div id="experiences" class="py-20 max-w-5xl flex items-center w-full">
                 <LazySectionExperience class="w-full"/>
             </div>
         </div>
-        <div class="w-full px-5 sm:px-8 flex justify-center bg-gray-800">
+        <div class="w-full px-5 sm:px-8 flex justify-center tile bg-gray-800">
             <div id="formations" class="py-20 max-w-5xl flex items-center w-full">
                 <LazySectionFormation class="w-full"/>
             </div>
         </div>
-        <div class="w-full px-5 sm:px-8 flex justify-center">
+        <div class="w-full px-5 sm:px-8 flex justify-center tile">
             <div id="competences" class="py-20 max-w-5xl flex items-center w-full">
                 <LazySectionSkill class="w-full"/>
             </div>
         </div>
-        <div class="w-full px-5 sm:px-8 flex justify-center bg-gray-800">
+        <div class="w-full px-5 sm:px-8 flex justify-center tile bg-gray-800">
             <div id="interest" class="py-20 max-w-5xl flex items-center w-full">
                 <LazySectionInterest class="w-full"/>
             </div>
         </div>
-        <div class="w-full px-5 sm:px-8 flex justify-center">
+        <div class="w-full px-5 sm:px-8 flex justify-center tile">
             <div id="projects" class="py-20 max-w-5xl flex items-center w-full">
                 <LazySectionProject class="w-full"/>
             </div>
         </div>
-        <div class="w-full px-5 sm:px-8 flex justify-center bg-gray-800">
+        <div class="w-full px-5 sm:px-8 flex justify-center tile bg-gray-800">
             <div id="extra" class="py-20 max-w-5xl flex items-center w-full">
                 <LazySectionExtra class="w-full"/>
             </div>
         </div>
-        <div class="w-full px-5 sm:px-8 flex justify-center">
+        <div class="w-full px-5 sm:px-8 flex justify-center tile">
             <div id="contact" class="py-20 max-w-5xl flex items-center w-full">
                 <LazySectionContact class="w-full"/>
             </div>
@@ -70,6 +70,23 @@
         <script>
             const scene = document.getElementById('scene');
             const parallax = new Parallax(scene);
+        </script>
+        <script>
+            let elementsArray = document.querySelectorAll('.tile');
+            console.log(elementsArray);
+            window.addEventListener('scroll', fadeIn ); 
+            function fadeIn() {
+                for (var i = 0; i< elementsArray.length; i++) {
+                    var elem = elementsArray[i]
+                    var distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
+                    if (distInView < 0) {
+                        elem.classList.add('inView');
+                    } else {
+                        elem.classList.remove('inView');
+                    }
+                }
+            }
+            fadeIn();
         </script>
     </div>
 </template>

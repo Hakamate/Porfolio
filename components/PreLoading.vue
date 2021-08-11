@@ -25,11 +25,9 @@ export default {
   }),
   methods: {
     start() {
-        console.log('ccddddd');
         this.loading = true
     },
     finish() {
-        console.log('ccdddddddsdssdsd');
         this.loading = false
     },
     fail(error) {
