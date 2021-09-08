@@ -17,7 +17,7 @@
             </div>
             <div class="flex flex-col items-center justify-center">
                 <p class="text-xl text-center">Une version PDF de mon CV est disponible</p>
-                <ButtonApp :href="'/documents/CV Thomas CLEMENT - Chef de projet IT.pdf'" target="_blank" class="bg-primary text-white w-max mt-4 transition duration-500 transform hover:scale-125">
+                <ButtonApp :href="'/documents/Product Manager - Chef de projet IT - Thomas CLEMENT 2021.pdf'" target="_blank" class="bg-primary text-white w-max mt-4 transition duration-500 transform hover:scale-125">
                     <span class="mr-3 text-xl">Télécharger</span>
                     <DynamicSvg :icon="'download'" />
                 </ButtonApp>
