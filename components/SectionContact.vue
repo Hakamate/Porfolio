@@ -39,8 +39,12 @@
       <div>
         <ul>
           <li v-for="(info, indexc) in contactInfo" :key="indexc" class="mb-5 last:mb-0 flex items-center">
-            <DynamicSvg :icon="info.icon" :width="25" :height="25" class="text-primary mr-3" />
-            <a :href="info.url" target="_blank" rel="noopener" class="hover:text-primary hover:underline text-xl">{{ info.value }}</a>
+            <a :href="info.url" target="_blank" rel="noopener" class="flex hover:text-primary hover:underline text-xl">
+              <DynamicSvg :icon="info.icon" :width="25" :height="25" class="text-primary mr-3" />
+              <span>
+                {{ info.value }}
+              </span>
+            </a>
           </li>
         </ul>
       </div>
@@ -57,7 +61,7 @@ export default Vue.extend({
         { icon: 'phone', url: 'tel:0648352851', value: '06 48 35 28 51' },
         { icon: 'linkedin', url: 'https://www.linkedin.com/in/thomas-clmt/', value: 'in/thomas-clmt/' },
         { icon: 'github', url: 'https://github.com/Hakamate', value: '@Hakamate' },
-        { icon: 'locate', url: '#contact', value: '59800 Lille' }
+        { icon: 'locate', url: 'https://www.google.fr/maps/place/Lille', value: '59800 Lille' }
       ],
       aboutStat: [
         { title: 'Années d\'expériences', value: '4 +' },

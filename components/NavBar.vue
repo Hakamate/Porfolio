@@ -6,9 +6,9 @@
     </div>
     <ul class="mb-4 md:my-auto grid gap-3 md:gap-7">
       <li v-for="(navigation, index) in navigations" :key="index">
-        <a :href="navigation.to" class="flex md:justify-center" @clickedButton="toggleMenu()">
-          <DynamicSvg :icon="navigation.icon" class="text-gray-500 transition duration-500 hover:text-primary" :width="25" :height="25" />
-          <span class="md:hidden text-gray-400 ml-4">{{ navigation.title }}</span>
+        <a :href="navigation.to" class="group flex md:justify-center" @click="toggleMenu()">
+          <DynamicSvg :icon="navigation.icon" class="text-gray-500 transition duration-500 group-hover:text-primary" :width="25" :height="25" />
+          <span class="md:hidden text-gray-400 ml-4 group-hover:text-primary transition duration-500">{{ navigation.title }}</span>
         </a>
       </li>
     </ul>
