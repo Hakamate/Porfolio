@@ -1,22 +1,26 @@
 <template>
-    <div class="text-white text-shadow-lg">
-        <span class="text-3xl">BIENVENUE !</span>
-        <h2 class="text-4xl font-bold leading-relaxed">Moi c'est <span class="text-primary">Thomas</span></h2>
-        <p class="text-2xl mb-2">Je suis <span id="im" class="text-2xl underline"></span></p>
-        <p class="text-xl text-shadow-xl">
-            Passionné par la technologie et le monde qui l'entoure, j'aime m'investir dans de nombreux projets visant à répondre aux problématiques actuelles.
-            En tant que maker je m’intéresse de plus prés aux métiers de business développeur et chargée d’affaire, et ce, dans l'objectif de compléter mon panel de compétences dans le monde de l'IT.</p>
-        <ButtonApp href="#about" class="mt-3 w-max">
-            <span class="mr-3">A propos de moi</span>
-            <DynamicSvg :icon="'profile'"/>
-        </ButtonApp>
-        <div class="flex items-center justify-center flex-col mt-24 absolute bottom-10 left-0 right-0">
-            <div class='icon-scroll'></div>
-            <span class="text-xl font-light mt-2">Scroll</span>
-        </div>
+  <div class="text-white text-shadow-lg">
+    <span class="text-3xl">BIENVENUE !</span>
+    <h2 class="text-4xl font-bold leading-relaxed">
+      Moi c'est <span class="text-primary">Thomas</span>
+    </h2>
+    <p class="text-2xl mb-2">
+      Je suis <span id="im" class="text-2xl underline" />
+    </p>
+    <p class="text-xl text-shadow-xl">
+      Passionné par la technologie et le monde qui l'entoure, j'aime m'investir dans de nombreux projets visant à répondre aux problématiques actuelles.
+      En tant que maker je m’intéresse de plus prés aux métiers de business développeur et chargée d’affaire, et ce, dans l'objectif de compléter mon panel de compétences dans le monde de l'IT.
+    </p>
+    <ButtonApp href="#about" class="mt-3 w-max">
+      <span class="mr-3">A propos de moi</span>
+      <DynamicSvg :icon="'profile'" />
+    </ButtonApp>
+    <div class="flex items-center justify-center flex-col mt-10 sm:mt-24 sm:absolute bottom-10 left-0 right-0">
+      <div class="icon-scroll" />
+      <span class="text-xl font-light mt-2">Scroll</span>
     </div>
+  </div>
 </template>
-
 
 <style scoped>
 @keyframes fade-in-out {
@@ -47,7 +51,6 @@
     left: 50%;
     right: 50%;
 }
-
 
 .icon-scroll{
     width: 25px;
@@ -107,14 +110,14 @@
         opacity:0;
     }
     57.2% {
-        opacity:1; 
+        opacity:1;
         content: "No-coder"
     }
     71.5% {
         opacity:0;
     }
     85.8% {
-        opacity:1; 
+        opacity:1;
         content: "Chef de projet IT"
     }
     100% {

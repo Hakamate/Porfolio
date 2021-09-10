@@ -21,60 +21,60 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          "Je suis développeur web / chef de projet IT. Passionné par la technologie et le monde qui l'entoure, j'aime m'investir dans de nombreux projets visant à répondre aux problématiques actuelles.",
+          "Je suis développeur web / chef de projet IT. Passionné par la technologie et le monde qui l'entoure, j'aime m'investir dans de nombreux projets visant à répondre aux problématiques actuelles."
       },
       {
         name: 'google-site-verification',
-        content: 'xj2LWIb7oOXEfCgiTJhaT7-3ryNQZLTQCAA0fKiEgyk',
+        content: 'xj2LWIb7oOXEfCgiTJhaT7-3ryNQZLTQCAA0fKiEgyk'
       },
       { name: 'Content-Language', content: 'fr' },
       { name: 'twitter:card', content: 'summary' },
       {
         name: 'twitter:site',
-        content: 'https://thomas-clement.netlify.app',
+        content: 'https://thomas-clement.netlify.app'
       },
       {
         name: 'twitter:title',
-        content: 'Développeur Freelance / Chef de projet IT - Thomas CLEMENT',
+        content: 'Développeur Freelance / Chef de projet IT - Thomas CLEMENT'
       },
       {
         name: 'twitter:description',
         content:
-          "Je suis développeur web / chef de projet IT. Passionné par la technologie et le monde qui l'entoure, j'aime m'investir dans de nombreux projets visant à répondre aux problématiques actuelles.",
+          "Je suis développeur web / chef de projet IT. Passionné par la technologie et le monde qui l'entoure, j'aime m'investir dans de nombreux projets visant à répondre aux problématiques actuelles."
       },
       // image must be an absolute path
       {
         name: 'twitter:image',
-        content: 'https://thomas-clement.netlify.app' + '/metaimage.jpg',
+        content: 'https://thomas-clement.netlify.app' + '/metaimage.jpg'
       },
       // Facebook OpenGraph
       {
         property: 'og:url',
-        content: 'https://thomas-clement.netlify.app/',
+        content: 'https://thomas-clement.netlify.app/'
       },
       {
         property: 'og:title',
-        content: 'Développeur Freelance / Chef de projet IT - Thomas CLEMENT',
+        content: 'Développeur Freelance / Chef de projet IT - Thomas CLEMENT'
       },
       {
         property: 'og:site_name',
-        content: 'Développeur Freelance / Chef de projet IT - Thomas CLEMENT',
+        content: 'Développeur Freelance / Chef de projet IT - Thomas CLEMENT'
       },
       { property: 'og:type', content: 'website' },
       {
         property: 'og:image',
-        content: 'https://thomas-clement.netlify.app' + '/metaimage.jpg',
+        content: 'https://thomas-clement.netlify.app' + '/metaimage.jpg'
       },
       {
         property: 'og:description',
         content:
-          "Je suis développeur web / chef de projet IT. Passionné par la technologie et le monde qui l'entoure, j'aime m'investir dans de nombreux projets visant à répondre aux problématiques actuelles.",
+          "Je suis développeur web / chef de projet IT. Passionné par la technologie et le monde qui l'entoure, j'aime m'investir dans de nombreux projets visant à répondre aux problématiques actuelles."
       },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ],
+    ]
   },
 
   loading: '~/components/PreLoading.vue',
@@ -83,8 +83,8 @@ export default {
     // Setting up cache for 'static' directory - a year in milliseconds
     // https://web.dev/uses-long-cache-ttl
     static: {
-      maxAge: 60 * 60 * 24 * 365 * 1000,
-    },
+      maxAge: 60 * 60 * 24 * 365 * 1000
+    }
   },
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
@@ -92,6 +92,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~/plugins/tooltip.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -115,22 +116,21 @@ export default {
     // '@nuxtjs/pwa',
     ['nuxt-lazy-load', {
       // These are the default values
-      images: true,
+      images: true
     }],
     '@nuxtjs/robots'
   ],
 
-
   googleFonts: {
     families: {
       // a simple name
-      Rubik: true,
+      Rubik: true
     }
   },
 
   robots: {
     UserAgent: '*',
-    Disallow: '',
+    Disallow: ''
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

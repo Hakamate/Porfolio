@@ -1,10 +1,10 @@
 <template>
   <div class="flex items-center h-full text-gray-800">
     <DynamicSvg class="z-20 fixed md:hidden top-4 right-4 bg-gray-600 text-white transition duration-500 hover:bg-primary p-2 cursor-pointer" :icon="'hamburger'" @clickedDynamic="toggleMenu()" />
-    <NavBar :class="toggleMenuClass()" @toggleMenu="toggleMenu()"/>
+    <NavBar :class="toggleMenuClass()" @toggleMenu="toggleMenu()" />
     <Main class="w-full" />
     <a href="#" class="fixed bottom-4 right-4 goingTop">
-      <DynamicSvg :icon="'down'" class="transform rotate-180 p-4 text-white rounded-full bg-black opacity-10 hover:opacity-100 hover:bg-primary"/>
+      <DynamicSvg :icon="'down'" class="transform rotate-180 p-4 text-white rounded-full bg-black opacity-10 hover:opacity-100 hover:bg-primary" />
       <span class="absolute bottom-0 right-0 w-0 h-0 opacity-0">Revenir en haut</span>
     </a>
   </div>
@@ -14,23 +14,23 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  data() {
+  data () {
     return {
       menu: false
     }
   },
-  mounted(){
+  mounted () {
     // this.$nextTick(async () => {
     //   this.$nuxt.$loading.start()
     //   // something to fetch
     //   this.$nuxt.$loading.finish()
     // })
   },
-  methods : {
-    toggleMenu() {
+  methods: {
+    toggleMenu () {
       this.menu = !this.menu
     },
-    toggleMenuClass() {
+    toggleMenuClass () {
       return this.menu === false ? 'fadeOutNav md:translate-x-0' : 'fadeInNav md:translate-x-0'
     }
   }
@@ -50,7 +50,7 @@ body::-webkit-scrollbar {
 }
 body::-webkit-scrollbar-track {
   background: transparent;
-  @apply rounded-lg shadow-custom; 
+  @apply rounded-lg shadow-custom;
 }
 body::-webkit-scrollbar-thumb {
   @apply bg-primary;    /* color of the scroll thumb */
@@ -69,10 +69,9 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-
 @keyframes fadeInNav {
   0% {
-    transform: translateX(-120px)
+    transform: translateX(-100vw)
   }
   100% {
     transform: translateX(0)
@@ -81,10 +80,10 @@ body::-webkit-scrollbar-thumb {
 
 @keyframes fadeOutNav {
   0% {
-    transform: translateX(0) 
+    transform: translateX(0)
   }
   100% {
-    transform: translateX(-120px) 
+    transform: translateX(-100vw)
   }
 }
 @keyframes goingTop {
