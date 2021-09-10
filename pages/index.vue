@@ -39,7 +39,7 @@ export default Vue.extend({
 
 <style>
 html {
-   scroll-behavior: smooth;
+   scroll-behavior: smooth!important;
 }
 body{
   background-color: #f9faff;
