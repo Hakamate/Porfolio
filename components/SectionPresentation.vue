@@ -9,7 +9,7 @@
     </p>
     <p class="text-xl text-shadow-xl">
       Passionné par la technologie et le monde qui l'entoure, j'aime m'investir dans de nombreux projets visant à répondre aux problématiques actuelles.
-      En tant que maker je m’intéresse de plus prés aux métiers de business développeur et chargée d’affaire, et ce, dans l'objectif de compléter mon panel de compétences dans le monde de l'IT.
+      En tant que maker je m’intéresse de plus prés au Growth hacking, Marketing et la Communication, et ce, dans l'objectif de compléter mon panel de compétences dans le monde de l'IT.
     </p>
     <ButtonApp href="#about" class="mt-3 w-max">
       <span class="mr-3">A propos de moi</span>
