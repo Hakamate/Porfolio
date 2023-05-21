@@ -55,7 +55,7 @@ export default Vue.extend({
         { title: 'Années d\'expériences', value: '4 +' },
         { title: 'Projets Ingénieur / IT Réalisés', value: '40 +' },
         { title: 'Expériences Professionnelles', value: '8' },
-        { title: 'Vues sur LinkedIn', value: '300k +' }
+        { title: 'Vues sur LinkedIn', value: '3M +' }
       ]
     }
   }
