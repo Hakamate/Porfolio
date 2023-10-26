@@ -47,8 +47,8 @@ export default Vue.extend({
     return {
       aboutInfo: [
         { title: 'Age', value: '24' },
-        { title: 'Diplôme', value: 'Bac + 5' },
-        { title: 'Post', value: 'Fondateur / Ingénieur / Project Manager' },
+        { title: 'Diplôme', value: 'Bac + 5 : Ingénieur' },
+        { title: 'Poste', value: 'Fondateur / Ingénieur / Project Manager' },
         { title: 'Langages', value: 'Français, Anglais, TypeScript' }
       ],
       aboutStat: [
