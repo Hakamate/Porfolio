@@ -46,14 +46,14 @@ export default Vue.extend({
   data () {
     return {
       aboutInfo: [
-        { title: 'Age', value: '21' },
+        { title: 'Age', value: '24' },
         { title: 'Diplôme', value: 'Bac + 5' },
-        { title: 'Post', value: 'Ingénieur / Chef de projet IT' },
+        { title: 'Post', value: 'Fondateur / Ingénieur / Project Manager' },
         { title: 'Langages', value: 'Français, Anglais, Espagnol' }
       ],
       aboutStat: [
-        { title: 'Années d\'expériences', value: '4 +' },
-        { title: 'Projets Ingénieur / IT Réalisés', value: '40 +' },
+        { title: 'Années d\'expériences', value: '6+' },
+        { title: 'Projets Ingénieur / IT Réalisés', value: '50 +' },
         { title: 'Expériences Professionnelles', value: '8' },
         { title: 'Vues sur LinkedIn', value: '3M +' }
       ]
