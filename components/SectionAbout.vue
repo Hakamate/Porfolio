@@ -8,11 +8,11 @@
 
     <div class="mt-10 grid grid-cols-1 gap-10">
       <div class="flex flex-col sm:flex-row justify-center items-center">
-        <img src="~assets/img/original-profile.jpg" width="0" height="0" alt="Photo de profil Thomas CLEMENT" class="shadow-custom rounded-full mb-2 w-44">
-        <ul class="mt-2 sm:mt-0 sm:ml-8 rounded-xl bg-white shadow-custom p-4">
+        <img src="~assets/img/Thomas.jpg" width="0" height="0" alt="Photo de profil Thomas CLEMENT" class="shadow-custom rounded-full mb-2 w-44">
+        <ul class="mt-2 sm:mt-0 sm:ml-8 rounded-md bg-white shadow-custom p-4">
           <li v-for="(info, index) in aboutInfo" :key="index" class="mb-1 last:mb-0">
             <p class="text-xl">
-              <span class="font-semibold text-primary mr-1">{{ info.title }} :</span> {{ info.value }}
+              <span class="font-semibold text-blue-500 mr-1">{{ info.title }} :</span> {{ info.value }}
             </p>
           </li>
         </ul>
@@ -21,15 +21,15 @@
         <p class="text-xl text-center">
           Une version PDF de mon CV est disponible
         </p>
-        <ButtonApp :href="'/documents/Product Manager-Owner - Chef de projet IT - Thomas CLEMENT.pdf'" target="_blank" class="bg-primary text-white w-max mt-4 transition duration-500 transform hover:scale-125">
+        <ButtonApp :href="'/documents/Product Manager-Owner - Chef de projet IT - Thomas CLEMENT.pdf'" target="_blank" class="bg-blue-500 text-white w-max mt-4 transition duration-500 transform hover:scale-125">
           <span class="mr-3 text-xl">Télécharger</span>
           <DynamicSvg :icon="'download'" />
         </ButtonApp>
       </div>
       <div>
         <ul class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <li v-for="(stat, indexS) in aboutStat" :key="indexS" class="transform hover:-translate-y-2 transition duration-500 group hover:bg-primary p-6 bg-white rounded-lg shadow-custom flex flex-col items-center justify-center">
-            <span class="group-hover:text-white text-5xl text-primary mb-2">{{ stat.value }}</span>
+          <li v-for="(stat, indexS) in aboutStat" :key="indexS" class="transform hover:-translate-y-2 transition duration-500 group hover:bg-blue-500 p-6 bg-white rounded-lg shadow-custom flex flex-col items-center justify-center">
+            <span class="group-hover:text-white text-5xl text-blue-500 mb-2">{{ stat.value }}</span>
             <p class="group-hover:text-white font-semibold text-2xl text-center">
               {{ stat.title }}
             </p>
@@ -41,7 +41,7 @@
   </div>
 </template>
 <script lang="ts">
-import Vue from 'vue'
+import Vue from 'vue';
 export default Vue.extend({
   data () {
     return {
@@ -49,7 +49,7 @@ export default Vue.extend({
         { title: 'Age', value: '24' },
         { title: 'Diplôme', value: 'Bac + 5' },
         { title: 'Post', value: 'Fondateur / Ingénieur / Project Manager' },
-        { title: 'Langages', value: 'Français, Anglais, Espagnol' }
+        { title: 'Langages', value: 'Français, Anglais, TypeScript' }
       ],
       aboutStat: [
         { title: 'Années d\'expériences', value: '6+' },

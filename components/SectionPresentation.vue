@@ -1,15 +1,20 @@
 <template>
-  <div class="text-white text-shadow-lg">
-    <span class="text-3xl">BIENVENUE !</span>
+  <div class="text-white">
+    <div class="grid">
+      <span class="text-xs">Portfolio créé en 2019</span>
+      <span class="text-3xl">BIENVENUE !</span>
+    </div>
     <h2 class="text-4xl font-bold leading-relaxed">
-      Moi c'est <span class="text-primary">Thomas</span>
+      Moi c'est <span class="text-blue-300">Thomas</span>
     </h2>
     <p class="text-2xl mb-2">
       Je suis <span id="im" class="text-2xl underline" />
     </p>
-    <p class="text-xl text-shadow-xl">
-      Passionné par la technologie et le monde qui l'entoure, j'aime m'investir dans de nombreux projets visant à répondre aux problématiques actuelles.
-      En tant que maker je m’intéresse de plus prés au Growth hacking, Marketing et la Communication, et ce, dans l'objectif de compléter mon panel de compétences dans le monde de l'IT.
+    <p class="text-xl">
+      Fan de tech depuis l'âge de 6 ans, j'ai commencé à créer des applications à 11.
+      Oui c'est un virus.
+
+      Aujourd'hui je crée des produits pour nous simplifier la vie et je suis un touche à tout : Growth hacking, Marketing, Communication, Design, Développement, etc...
     </p>
     <ButtonApp href="#about" class="mt-3 w-max">
       <span class="mr-3">A propos de moi</span>
@@ -104,21 +109,21 @@
     }
     28.6% {
         opacity:1;
-        content: "Intégrateur"
+        content: "Product Builder"
     }
     42.9% {
         opacity:0;
     }
     57.2% {
         opacity:1;
-        content: "No-coder"
+        content: "No-Coder"
     }
     71.5% {
         opacity:0;
     }
     85.8% {
         opacity:1;
-        content: "Chef de projet IT"
+        content: "Fondateur"
     }
     100% {
         opacity: 0;

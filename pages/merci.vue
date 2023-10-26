@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col justify-center items-center min-h-screen min-w-screen p-5">
         <p class="text-2xl text-center">Merci d'avoir pris le temps de me contacter</p>
-        <p class="text-center text-xl my-6">Pour retourner sur le site, c'est par <a href="/" class="font-semibold hover:underline text-primary">ici</a></p>
+        <p class="text-center text-xl my-6">Pour retourner sur le site, c'est par <a href="/" class="font-semibold hover:underline text-blue-500">ici</a></p>
         <MerciSvg />
     </div>
 </template>
@@ -16,9 +16,9 @@ body::-webkit-scrollbar {
 }
 body::-webkit-scrollbar-track {
   background: transparent;
-  @apply rounded-lg; 
+  @apply rounded-lg;
 }
 body::-webkit-scrollbar-thumb {
-  @apply bg-primary;    /* color of the scroll thumb */
+  @apply bg-blue-500;    /* color of the scroll thumb */
 }
 </style>

@@ -1,35 +1,30 @@
 <template>
-  <div class="z-50 fixed md:sticky w-full md:w-auto  top-0 left-0 bottom-0 min-h-screen p-8 bg-gray-800 flex flex-col justify-between transform">
-    <DynamicSvg class="md:hidden bg-gray-600 transition duration-500 hover:bg-primary p-1 cursor-pointer mb-4 mx-auto text-white" :icon="'close'" @clickedDynamic="toggleMenu()" />
+  <div class="z-50 fixed md:sticky w-full md:w-auto top-0 left-0 bottom-0 min-h-screen p-4 bg-gray-800 flex flex-col transform">
+    <DynamicSvg class="md:hidden bg-gray-600 transition duration-500 hover:bg-blue-500 p-1 cursor-pointer mb-4 mx-auto text-white" :icon="'close'" @clickedDynamic="toggleMenu()" />
     <div class="hidden text-center md:flex flex-col items-center justify-center">
-      <img src="~assets/img/profile.jpg" width="0" height="0" alt="Photo de profil Thomas CLEMENT" class="rounded-full mb-2 w-12">
+      <img src="~assets/img/Thomas.jpg" width="0" height="0" alt="Photo de profil Thomas CLEMENT" class="rounded-full mb-2 w-12">
     </div>
-    <ul class="mb-4 md:my-auto grid gap-3 md:gap-7">
+    <ul class="my-4 grid gap-3 md:gap-6">
       <li v-for="(navigation, index) in navigations" :key="index">
         <a :href="navigation.to" class="group flex md:justify-center" @click="toggleMenu()">
-          <DynamicSvg :icon="navigation.icon" class="text-gray-500 transition duration-500 group-hover:text-primary" :width="25" :height="25" />
-          <span class="md:hidden text-gray-400 ml-4 group-hover:text-primary transition duration-500">{{ navigation.title }}</span>
+          <DynamicSvg :icon="navigation.icon" class="text-gray-500 transition duration-500 group-hover:text-blue-500" :width="18" :height="18" />
+          <span class="md:hidden text-gray-400 ml-4 group-hover:text-blue-500 transition duration-500">{{ navigation.title }}</span>
         </a>
       </li>
     </ul>
-    <div class="flex md:flex-col">
-      <a
-        v-for="(contact, indexc) in contacts"
-        :key="indexc"
-        rel="noopener"
-        target="_blank"
-        :href="contact.to"
-        class="group mx-auto w-8 h-8 transition duration-500 hover:bg-primary rounded-full flex items-center justify-center"
-      >
-        <DynamicSvg :icon="contact.icon" class="group-hover:text-white transition duration-500 text-gray-500 p-2" :width="20" :height="20" />
-        <span class="w-0 h-0 opacity-0">{{ contact.icon }}</span>
-      </a>
-    </div>
+    <ul class="grid gap-3 md:gap-6 mt-auto">
+      <li v-for="(contact, indexc) in contacts" :key="index">
+        <a :href="contact.to" class="group flex md:justify-center" @click="toggleMenu()">
+          <DynamicSvg :icon="contact.icon" class="text-gray-500 transition duration-500 group-hover:text-blue-500" :width="18" :height="18" />
+          <span class="md:hidden text-gray-400 ml-4 group-hover:text-blue-500 transition duration-500">{{ contact.title }}</span>
+        </a>
+      </li>
+    </ul>
   </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import Vue from 'vue';
 
 export default Vue.extend({
   data () {
@@ -47,10 +42,10 @@ export default Vue.extend({
         { icon: 'phone', title: 'Contact', to: '#contact' }
       ],
       contacts: [
-        { icon: 'linkedin', to: 'https://www.linkedin.com/in/thomas-clmt/' },
-        { icon: 'envelope', to: 'mailto:thomas.clement@viacesi.fr' },
-        { icon: 'phone', to: 'tel:0648352851' },
-        { icon: 'github', to: 'https://github.com/Hakamate' }
+        { icon: 'linkedin', title: 'LinkedIn', to: 'https://www.linkedin.com/in/thomas-clmt/' },
+        { icon: 'envelope', title: 'Envoyer un mail', to: 'mailto:thomas.clement.professionnel@gmail.com' },
+        { icon: 'phone', title: 'Appeler', to: 'tel:0648352851' },
+        { icon: 'github', title: 'Github', to: 'https://github.com/Hakamate' }
       ]
     }
   },

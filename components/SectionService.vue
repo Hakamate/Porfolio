@@ -14,11 +14,11 @@
                 </div>
             </li>
         </ul>
-        <p class="text-center text-xl text-white mt-6">Je suis disponible sur <a href="https://www.malt.fr/profile/thomasclement" target="_blank" class="font-semibold hover:underline text-primary">malt.fr</a> ou par <a href="#contact" class="font-semibold hover:underline text-primary">message</a></p>
+        <p class="text-center text-xl text-white mt-6">Je suis disponible sur <a href="https://www.malt.fr/profile/thomasclement" target="_blank" class="font-semibold hover:underline text-blue-500">malt.fr</a> ou par <a href="#contact" class="font-semibold hover:underline text-blue-500">message</a></p>
     </div>
 </template>
 <script lang="ts">
-import Vue from 'vue'
+import Vue from 'vue';
 export default Vue.extend({
     data() {
         return {

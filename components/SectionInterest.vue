@@ -8,14 +8,14 @@
         <div class="mt-10">
             <ul class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
                 <li v-for="(element, index) in interest" :key="index" class="flex flex-col items-center w-full">
-                    <button class="rounded-2xl px-2 py-1 transition duration-500 transform hover:-translate-y-2 w-full h-20 bg-white text-gray-80 hover:bg-primary hover:text-white text-lg font-semibold shadow-custom" :class="element.color">{{ elementMaj(element.name) }}</button>
+                    <button class="rounded-md px-2 py-1 transition duration-500 transform hover:-translate-y-2 w-full h-20 bg-white text-gray-80 hover:bg-blue-500 hover:text-white text-lg font-semibold shadow-custom" :class="element.color">{{ elementMaj(element.name) }}</button>
                 </li>
             </ul>
         </div>
     </div>
 </template>
 <script lang="ts">
-import Vue from 'vue'
+import Vue from 'vue';
 export default Vue.extend({
     data() {
         return {

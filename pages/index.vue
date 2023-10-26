@@ -1,10 +1,10 @@
 <template>
   <div class="flex items-center h-full text-gray-800">
-    <DynamicSvg class="z-20 fixed md:hidden top-4 right-4 bg-gray-600 text-white transition duration-500 hover:bg-primary p-2 cursor-pointer" :icon="'hamburger'" @clickedDynamic="toggleMenu()" />
+    <DynamicSvg class="z-20 fixed md:hidden top-4 right-4 bg-gray-600 text-white transition duration-500 hover:bg-blue-500 p-2 cursor-pointer" :icon="'hamburger'" @clickedDynamic="toggleMenu()" />
     <NavBar :class="toggleMenuClass()" @toggleMenu="toggleMenu()" />
     <Main class="w-full" />
     <a href="#" class="fixed bottom-4 right-4 goingTop">
-      <DynamicSvg :icon="'down'" class="transform rotate-180 p-4 text-white rounded-full bg-black opacity-10 hover:opacity-100 hover:bg-primary" />
+      <DynamicSvg :icon="'down'" class="transform rotate-180 p-4 text-white rounded-md bg-black opacity-10 hover:opacity-100 hover:bg-blue-500" />
       <span class="absolute bottom-0 right-0 w-0 h-0 opacity-0">Revenir en haut</span>
     </a>
   </div>
@@ -45,16 +45,16 @@ body{
   background-color: #f9faff;
   font-family: Rubik, sans-serif;
 }
-body::-webkit-scrollbar {
-  width: 12px;               /* width of the entire scrollbar */
+/* body::-webkit-scrollbar {
+  width: 12px;
 }
 body::-webkit-scrollbar-track {
   background: transparent;
   @apply rounded-lg shadow-custom;
 }
 body::-webkit-scrollbar-thumb {
-  @apply bg-primary;    /* color of the scroll thumb */
-}
+  @apply bg-blue-500;
+} */
 
 .shadow-custom {
   box-shadow: 0px 5px 20px 0px rgb(69 67 96 / 10%);

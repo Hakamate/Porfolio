@@ -7,9 +7,9 @@
     </h2>
     <!-- <ul class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             <li v-for="(project, index) in projects" :key="index" class="flex flex-col relative hover-description">
-                <img :src="require(`~/assets/img/projets/${project.image}`)" :alt="project.alt" width="0" height="0" class="rounded-2xl h-full w-full shadow-custom">
+                <img :src="require(`~/assets/img/projets/${project.image}`)" :alt="project.alt" width="0" height="0" class="rounded-md h-full w-full shadow-custom">
                 <span class="text-xl font-semibold text-center w-full mt-3">{{ project.title }}</span>
-                <div class="p-2 text-lg text-gray-800 font-normal hidden absolute top-0 left-0 items-center justify-center bg-primary h-full w-full rounded-2xl shadow-custom">
+                <div class="p-2 text-lg text-gray-800 font-normal hidden absolute top-0 left-0 items-center justify-center bg-blue-500 h-full w-full rounded-md shadow-custom">
                     <p>{{ project.description }}</p>
                 </div>
             </li>
@@ -18,7 +18,7 @@
       <li v-for="(project, index) in projects" :key="index">
         <div class="card h-full">
           <div class="card-body">
-            <img :src="require(`~/assets/img/projets/${project.image}`)" :alt="project.alt" width="0" height="0" class="card-front rounded-2xl h-full w-full shadow-custom">
+            <img :src="require(`~/assets/img/projets/${project.image}`)" :alt="project.alt" width="0" height="0" class="card-front rounded-md h-full w-full shadow-custom">
             <div class="card-back py-3 px-4 text-lg bg-white flex flex-col items-center justify-center">
               <span class="text-lg font-semibold mb-1 text-center">{{ project.title }}</span>
               <span class="text-sm text-center">{{ project.description }}</span>
@@ -30,12 +30,15 @@
   </div>
 </template>
 <script lang="ts">
-import Vue from 'vue'
+import Vue from 'vue';
 export default Vue.extend({
   data () {
     return {
       projects: [
         { image: 'login_searchii.png', title: 'Searchii', alt: 'Image Searchii', description: 'Vous êtes actuellement en recherche de CDD, CDI, Stage, Alternance ou tout simplement d\'un job ? Inscrivez-vous et bénéficiez d\'un outil de suivi.' },
+        { image: 'n-crm.png', title: 'n-crm', alt: 'Image n-crm', description: 'Automatisation de sa prospection LinkedIn vers Notion - CRM Notion.' },
+        { image: 'n-chart.png', title: 'n-chart', alt: 'Image n-chart', description: 'Ajoute des graphiques sur tes pages Notion en quelques clics' },
+        { image: 'liiloo.png', title: 'liiloo', alt: 'Image liiloo', description: 'Application dotée d\'une intelligence artificielle, pour améliorer la qualité de vos contenus sur les réseaux.' },
         { image: 'oneforalldiscordbot.png', title: 'OneForAll Discord bot', alt: 'Image OneForAll Discord bot', description: 'Un bot discord qui permet de réaliser tout type de commandes (stats, quizzs, news, organisation, événements vocaux, etc...)' },
         { image: 'swiper_zumee.png', title: 'Zumee', alt: 'Image Zumee', description: 'Rendre le recrutement plus dynamique en passant par le support qu\'est la vidéo de présentation' },
         { image: 'popup_nocodz.png', title: 'NoCodz', alt: 'Image NoCodz', description: 'Une extension chrome qui permet de répertorier des outils No-code par catégorie' },

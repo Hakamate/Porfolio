@@ -9,9 +9,9 @@
       <h3 class="text-2xl text-gray-600 font-semibold mb-5">
         Langage / Frontend
       </h3>
-      <ul class="grid grid-cols-4 sm:grid-cols-7 lg:grid-cols-12 gap-5 rounded-2xl bg-white shadow-custom p-6">
+      <ul class="grid grid-cols-4 sm:grid-cols-7 lg:grid-cols-12 gap-5 rounded-md bg-white shadow-custom p-6">
         <li v-for="(element, indexf) in front" :key="indexf" class="flex flex-col items-center group cursor-pointer">
-          <DynamicSvg v-tooltip="element.tooltip" :icon="element.icon" :width="30" :height="30" class="p-3 rounded-full bg-gray-200 transition duration-500 hover:bg-primary flex items-center justify-center" />
+          <DynamicSvg v-tooltip="element.tooltip" :icon="element.icon" :width="30" :height="30" class="p-3 rounded-md bg-gray-200 transition duration-500 hover:bg-blue-500 flex items-center justify-center" />
         </li>
       </ul>
     </div>
@@ -19,9 +19,9 @@
       <h3 class="text-2xl text-gray-600 font-semibold mb-5">
         Backend
       </h3>
-      <ul class="grid grid-cols-4 sm:grid-cols-7 lg:grid-cols-12 gap-5 rounded-2xl bg-white shadow-custom p-6 ml-auto">
+      <ul class="grid grid-cols-4 sm:grid-cols-7 lg:grid-cols-12 gap-5 rounded-md bg-white shadow-custom p-6 ml-auto">
         <li v-for="(element, indexb) in back" :key="indexb" class="flex flex-col items-center group cursor-pointer">
-          <DynamicSvg v-tooltip="element.tooltip" :icon="element.icon" :width="30" :height="30" class="p-3 rounded-full bg-gray-200 transition duration-500 hover:bg-primary flex items-center justify-center" />
+          <DynamicSvg v-tooltip="element.tooltip" :icon="element.icon" :width="30" :height="30" class="p-3 rounded-md bg-gray-200 transition duration-500 hover:bg-blue-500 flex items-center justify-center" />
         </li>
       </ul>
     </div>
@@ -29,9 +29,9 @@
       <h3 class="text-2xl text-gray-600 font-semibold mb-5">
         Architecture
       </h3>
-      <ul class="grid grid-cols-4 sm:grid-cols-7 lg:grid-cols-12 gap-5 rounded-2xl bg-white shadow-custom p-6">
+      <ul class="grid grid-cols-4 sm:grid-cols-7 lg:grid-cols-12 gap-5 rounded-md bg-white shadow-custom p-6">
         <li v-for="(element, indexa) in architecture" :key="indexa" class="flex flex-col items-center group cursor-pointer">
-          <DynamicSvg v-tooltip="element.tooltip" :icon="element.icon" :width="30" :height="30" class="p-3 rounded-full bg-gray-200 transition duration-500 hover:bg-primary flex items-center justify-center" />
+          <DynamicSvg v-tooltip="element.tooltip" :icon="element.icon" :width="30" :height="30" class="p-3 rounded-md bg-gray-200 transition duration-500 hover:bg-blue-500 flex items-center justify-center" />
         </li>
       </ul>
     </div>
@@ -39,9 +39,9 @@
       <h3 class="text-2xl text-gray-600 font-semibold mb-5">
         No/Low-code et Gestion de projet
       </h3>
-      <ul class="grid grid-cols-4 sm:grid-cols-7 lg:grid-cols-12 gap-5 rounded-2xl bg-white shadow-custom p-6">
+      <ul class="grid grid-cols-4 sm:grid-cols-7 lg:grid-cols-12 gap-5 rounded-md bg-white shadow-custom p-6">
         <li v-for="(element, indexn) in nocode" :key="indexn" class="flex flex-col items-center group cursor-pointer">
-          <DynamicSvg v-tooltip="element.tooltip" :icon="element.icon" :width="30" :height="30" class="p-3 rounded-full bg-gray-200 transition duration-500 hover:bg-primary flex items-center justify-center" />
+          <DynamicSvg v-tooltip="element.tooltip" :icon="element.icon" :width="30" :height="30" class="p-3 rounded-md bg-gray-200 transition duration-500 hover:bg-blue-500 flex items-center justify-center" />
         </li>
       </ul>
     </div>
@@ -59,48 +59,35 @@ export default Vue.extend({
         { icon: 'css', tooltip: 'CSS' },
         { icon: 'nuxtjs', tooltip: 'Nuxt.js' },
         { icon: 'vuejs', tooltip: 'Vue.js' },
-        { icon: 'reactjs', tooltip: 'React.js' },
         { icon: 'tailwind', tooltip: 'TailwindCSS' },
-        { icon: 'vuetify', tooltip: 'Vuetify' }
       ],
       back: [
         { icon: 'nodejs', tooltip: 'Node.js' },
         { icon: 'adonisjs', tooltip: 'Adonis.js' },
         { icon: 'nestjs', tooltip: 'Nest.js' },
-        { icon: 'postgresql', tooltip: 'PostgreSQL' },
-        { icon: 'mysql', tooltip: 'MySQL' },
-        { icon: 'mongodb', tooltip: 'MongoDB' },
-        { icon: 'graphql', tooltip: 'GraphQL' }
+        { icon: 'strapi', tooltip: 'Strapi' }
       ],
       architecture: [
         { icon: 'linux', tooltip: 'Linux' },
         { icon: 'windows', tooltip: 'Windows' },
         { icon: 'bash', tooltip: 'Bash' },
-        { icon: 'npm', tooltip: 'NPM' },
         { icon: 'postman', tooltip: 'Postman' },
-        { icon: 'jwt', tooltip: 'JWT' },
-        { icon: 'netlify', tooltip: 'Netlify' },
-        { icon: 'heroku', tooltip: 'Heroku' },
         { icon: 'docker', tooltip: 'Docker' },
-        { icon: 'git', tooltip: 'Git' }
+        { icon: 'postgresql', tooltip: 'PostgreSQL' },
+        { icon: 'mysql', tooltip: 'MySQL' },
+        { icon: 'mongodb', tooltip: 'MongoDB' }
       ],
       nocode: [
         { icon: 'notion', tooltip: 'Notion' },
         { icon: 'clickup', tooltip: 'Clickup' },
         { icon: 'asana', tooltip: 'Asana' },
-        { icon: 'jira', tooltip: 'Jira' },
-        { icon: 'confluence', tooltip: 'Confluence' },
-        { icon: 'miro', tooltip: 'Miro' },
-        { icon: 'trello', tooltip: 'Trello' },
         { icon: 'scrum', tooltip: 'Scrum' },
         { icon: 'bubble', tooltip: 'Bubble' },
         { icon: 'zapier', tooltip: 'Zapier' },
         { icon: 'integromat', tooltip: 'Integromat' },
         { icon: 'airtable', tooltip: 'Airtable' },
         { icon: 'mailchimp', tooltip: 'Mailchimp' },
-        { icon: 'figma', tooltip: 'Figma' },
-        { icon: 'strapi', tooltip: 'Strapi' },
-        { icon: 'wordpress', tooltip: 'Wordpress' }
+        { icon: 'figma', tooltip: 'Figma' }
       ]
     }
   },
